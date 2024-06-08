@@ -1,15 +1,17 @@
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
-import ThemeToggler from './utils/ThemeToggler';
+import ScrollProvider from './components/ScrollProvider';
+import './index.css';
 
 export default function App() {
     return (
         <>
-            <div className="font-faktum-bold bg-[#2C375A] ">
-                <ThemeToggler />
-                <NavBar />
-                <Hero />
-            </div>
+            <ScrollProvider>
+                <div className="lexend custom-gradient">
+                    <NavBar />
+                    <Hero />
+                </div>
+            </ScrollProvider>
         </>
     );
 }

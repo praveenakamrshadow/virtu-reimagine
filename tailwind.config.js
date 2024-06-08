@@ -5,10 +5,25 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                'faktum-regular': ['Faktum-Test-Bold', 'sans-serif'],
-                'faktum-bold': ['Faktum-Test-Regular', 'sans-serif'],
+                lexend: ['Lexend', 'sans-serif'],
+                inter: ['Inter', 'sans-serif'],
+            },
+            transitionProperty: {
+                width: 'width',
+                spacing: 'margin, padding',
+                bg: 'background-color',
+                transform: 'transform',
             },
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addUtilities }) {
+            const newUtilities = {
+                '.transition-all-ease': {
+                    transition: 'all 0.3s ease-in-out',
+                },
+            };
+            addUtilities(newUtilities, ['responsive', 'hover']);
+        },
+    ],
 };

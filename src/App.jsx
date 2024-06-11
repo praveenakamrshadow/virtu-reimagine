@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import ScrollProvider from './components/ScrollProvider';
 import Services from './components/Services';
+import ServicesTwo from './components/ServicesTwo';
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
                     <Hero />
                     <Featured />
                     <Services />
+                    <ServicesTwo />
                 </div>
             </ScrollProvider>
 

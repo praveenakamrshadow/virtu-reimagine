@@ -1,5 +1,9 @@
 const ServicesTwo = () => {
-    return <div>ServicesTwo</div>;
+    return (
+        <>
+            <div className="w-screen h-screen">ServicesTwo</div>
+        </>
+    );
 };
 
 export default ServicesTwo;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
+@import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 @tailwind base;
 @tailwind components;
@@ -83,4 +84,26 @@
     color: #ffffff;
 }
 
-/* slider css */
+/* Locomotive custom css */
+.scroll-container {
+    overflow: hidden;
+}
+
+/* Back To Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+}

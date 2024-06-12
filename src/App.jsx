@@ -1,29 +1,48 @@
-import { Route, Routes } from 'react-router-dom';
-import Featured from './components/Featured';
-import Hero from './components/Hero';
+import { useEffect, useRef } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 import NavBar from './components/NavBar';
-import ScrollProvider from './components/ScrollProvider';
 import Services from './components/Services';
 import ServicesTwo from './components/ServicesTwo';
+import Home from './Home';
+import Featured from './components/Featured';
 
 const App = () => {
-    return (
-        <div>
-            <ScrollProvider>
-                <div className="lexend custom-gradient">
-                    <NavBar />
-                    <Hero />
-                    <Featured />
-                    <Services />
-                    <ServicesTwo />
-                </div>
-            </ScrollProvider>
+    const scrollRef = useRef(null);
 
-            <Routes>
-                <Route path="/" element={<Hero />} />
-                <Route path="/featured" element={<Featured />} />
-            </Routes>
-        </div>
+    useEffect(() => {
+        let scroll;
+        if (scrollRef.current) {
+            scroll = new LocomotiveScroll({
+                el: scrollRef.current,
+                smooth: true,
+            });
+        }
+
+        return () => {
+            if (scroll) scroll.destroy();
+        };
+    }, []);
+
+    return (
+        <>
+            <Router>
+                <div
+                    ref={scrollRef}
+                    className="lexend custom-gradient overflow-hidden scroll-container"
+                >
+                    <NavBar />
+
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/featured" element={<Featured />} />
+                        <Route path="/services" element={<Services />} />
+                        <Route path="/servicesTwo" element={<ServicesTwo />} />
+                    </Routes>
+                </div>
+            </Router>
+        </>
     );
 };
 

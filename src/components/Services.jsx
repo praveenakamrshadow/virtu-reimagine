@@ -16,7 +16,7 @@ const Services = () => {
     return (
         <>
             <div className="h-screen w-full bg-[#151515] text-white flex flex-col items-center justify-center gap-x-10 p-[2%] ">
-                <h1 className="text-3xl mt-10 lexend-bold">
+                <h1 className="text-3xl font-bold lexend-bold tracking-tight text-white sm:text-4xl mt-10">
                     SERVICES WE OFFER
                 </h1>
                 <div className="flex flex-wrap justify-center mb-6 gap-x-10">

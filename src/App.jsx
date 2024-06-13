@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
-import NavBar from './components/NavBar';
 import Services from './components/Services';
 import ServicesTwo from './components/ServicesTwo';
 import Home from './Home';
@@ -28,12 +27,7 @@ const App = () => {
     return (
         <>
             <Router>
-                <div
-                    ref={scrollRef}
-                    className="lexend custom-gradient overflow-hidden scroll-container"
-                >
-                    <NavBar />
-
+                <div ref={scrollRef} className="lexend custom-gradient">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/featured" element={<Featured />} />

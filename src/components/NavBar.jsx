@@ -1,95 +1,38 @@
-import { useState, useEffect, useRef } from 'react';
-import { FaChevronDown, FaChevronRight, FaChevronUp } from 'react-icons/fa';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import ThemeToggler from '../utils/ThemeToggler';
 
 const Navbar = () => {
-    const [isDropdownOpen, setDropdownOpen] = useState({
-        corporate: false,
-        capabilities: false,
-        industries: false,
-        references: false,
-        agencySupport: false,
-        associates: false,
-        contactUs: false,
-        erp: false,
-    });
-    const timerRef = useRef(null);
+    const [isCorporateDropdownOpen, setIsCorporateDropdownOpen] =
+        useState(false);
+    const [isCapabilitiesDropdownOpen, setIsCapabilitiesDropdownOpen] =
+        useState(false);
+    const [isIndustriesDropdownOpen, setIsIndustriesDropdownOpen] =
+        useState(false);
 
-    const corporateRef = useRef(null);
-    const capabilitiesRef = useRef(null);
-    const industriesRef = useRef(null);
-    const referencesRef = useRef(null);
-    const agencySupportRef = useRef(null);
-    const associatesRef = useRef(null);
-    const contactUsRef = useRef(null);
-
-    const toggleDropdown = (dropdown) => {
-        setDropdownOpen((prevState) => ({
-            ...prevState,
-            [dropdown]: !prevState[dropdown],
-        }));
+    const toggleCorporateDropdown = () => {
+        setIsCorporateDropdownOpen(!isCorporateDropdownOpen);
+        // Close other dropdowns
+        setIsCapabilitiesDropdownOpen(false);
+        setIsIndustriesDropdownOpen(false);
     };
 
-    const handleMouseEnter = (dropdown) => {
-        setDropdownOpen((prevState) => ({
-            ...prevState,
-            [dropdown]: true,
-        }));
+    const toggleCapabilitiesDropdown = () => {
+        setIsCapabilitiesDropdownOpen(!isCapabilitiesDropdownOpen);
+        // Close other dropdowns
+        setIsCorporateDropdownOpen(false);
+        setIsIndustriesDropdownOpen(false);
     };
 
-    const handleMouseLeave = (dropdown) => {
-        timerRef.current = setTimeout(() => {
-            setDropdownOpen((prevState) => ({
-                ...prevState,
-                [dropdown]: false,
-            }));
-        }, 5000);
+    const toggleIndustriesDropdown = () => {
+        setIsIndustriesDropdownOpen(!isIndustriesDropdownOpen);
+        // Close other dropdowns
+        setIsCorporateDropdownOpen(false);
+        setIsCapabilitiesDropdownOpen(false);
     };
-
-    const dropdownVariants = {
-        hidden: { opacity: 0, height: 0 },
-        visible: { opacity: 1, height: 'auto' },
-    };
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (
-                corporateRef.current &&
-                !corporateRef.current.contains(event.target) &&
-                capabilitiesRef.current &&
-                !capabilitiesRef.current.contains(event.target) &&
-                industriesRef.current &&
-                !industriesRef.current.contains(event.target) &&
-                referencesRef.current &&
-                !referencesRef.current.contains(event.target) &&
-                agencySupportRef.current &&
-                !agencySupportRef.current.contains(event.target) &&
-                associatesRef.current &&
-                !associatesRef.current.contains(event.target) &&
-                contactUsRef.current &&
-                !contactUsRef.current.contains(event.target)
-            ) {
-                setDropdownOpen({
-                    corporate: false,
-                    capabilities: false,
-                    industries: false,
-                    references: false,
-                    agencySupport: false,
-                    associates: false,
-                    contactUs: false,
-                });
-            }
-        };
-
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
 
     return (
-        <nav className="bg-transparent lexend-normal sticky z-50 p-10">
+        <nav className="navbar bg-transparent lexend-normal p-10 sticky top-0 z-50">
             <div className="flex justify-between items-center">
                 <div>
                     <Link to={'/'}>
@@ -99,166 +42,157 @@ const Navbar = () => {
                         />
                     </Link>
                 </div>
-                <div className="flex items-center mr-12 space-x-8">
-                    {/* Corporate Dropdown */}
-                    <div
-                        className="relative"
-                        ref={corporateRef}
-                        onMouseEnter={() => handleMouseEnter('corporate')}
-                        onMouseLeave={() => handleMouseLeave('corporate')}
-                    >
+                <div className="flex items-center mr-12 space-x-8 relative">
+                    <div className="relative">
                         <button
-                            onClick={() => toggleDropdown('corporate')}
-                            className="nav-link flex gap-2 items-center justify-center"
+                            onClick={toggleCorporateDropdown}
+                            className="nav-link focus:outline-none flex items-center"
                         >
-                            Corporate{' '}
-                            {isDropdownOpen.corporate ? (
-                                <FaChevronUp />
-                            ) : (
-                                <FaChevronDown />
-                            )}
-                        </button>
-                        {isDropdownOpen.corporate && (
-                            <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                exit="hidden"
-                                variants={dropdownVariants}
-                                className="absolute mt-2 w-48 bg-[#2C3443] text-gray-500 rounded-md shadow-lg z-20"
-                                onMouseEnter={() =>
-                                    handleMouseEnter('corporate')
-                                }
-                                onMouseLeave={() =>
-                                    handleMouseLeave('corporate')
-                                }
+                            Corporate
+                            <svg
+                                className={`ml-2 transition-transform duration-300 ${
+                                    isCorporateDropdownOpen
+                                        ? 'transform rotate-180'
+                                        : ''
+                                }`}
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                             >
-                                <Link
-                                    to="/AboutUs"
-                                    className="block px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
-                                >
-                                    About Us
-                                </Link>
-                                <Link
-                                    to="/Carriers"
-                                    className="block px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
-                                >
-                                    Carriers
-                                </Link>
-                            </motion.div>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        {isCorporateDropdownOpen && (
+                            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                                <div className="py-1">
+                                    <Link
+                                        to="/corporate/sub1"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        About Us
+                                    </Link>
+                                    <Link
+                                        to="/corporate/sub2"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        Carriers
+                                    </Link>
+                                </div>
+                            </div>
                         )}
                     </div>
-                    {/* Capabilities Dropdown */}
-                    <div
-                        className="relative"
-                        ref={capabilitiesRef}
-                        onMouseEnter={() => handleMouseEnter('capabilities')}
-                        onMouseLeave={() => handleMouseLeave('capabilities')}
-                    >
+
+                    <div className="relative">
                         <button
-                            onClick={() => toggleDropdown('capabilities')}
-                            className="nav-link flex gap-2 items-center justify-center"
+                            onClick={toggleCapabilitiesDropdown}
+                            className="nav-link focus:outline-none flex items-center"
                         >
-                            Capabilities{' '}
-                            {isDropdownOpen.capabilities ? (
-                                <FaChevronUp />
-                            ) : (
-                                <FaChevronDown />
-                            )}
-                        </button>
-                        {isDropdownOpen.capabilities && (
-                            <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                exit="hidden"
-                                variants={dropdownVariants}
-                                className="absolute mt-2 w-64 bg-[#2C3443] text-gray-500 rounded-md shadow-lg z-20"
-                                onMouseEnter={() =>
-                                    handleMouseEnter('capabilities')
-                                }
-                                onMouseLeave={() =>
-                                    handleMouseLeave('capabilities')
-                                }
+                            Capabilities
+                            <svg
+                                className={`ml-2 transition-transform duration-300 ${
+                                    isCapabilitiesDropdownOpen
+                                        ? 'transform rotate-180'
+                                        : ''
+                                }`}
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                             >
-                                <Link
-                                    to="/capabilities/sub1"
-                                    className="block px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white"
-                                >
-                                    Technologies
-                                </Link>
-                                <Link
-                                    to="/capabilities/sub2"
-                                    className="px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white flex justify-between items-center"
-                                >
-                                    ERP
-                                    <FaChevronRight />
-                                </Link>
-                                <Link
-                                    to="/capabilities/sub2"
-                                    className=" px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white flex justify-between items-center"
-                                >
-                                    Digital Transformation
-                                    <FaChevronRight />
-                                </Link>
-                                <Link
-                                    to="/capabilities/sub2"
-                                    className=" px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white flex justify-between items-center"
-                                >
-                                    Managed Services
-                                    <FaChevronRight />
-                                </Link>
-                            </motion.div>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        {isCapabilitiesDropdownOpen && (
+                            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                                <div className="py-1">
+                                    <Link
+                                        to="/capabilities/sub1"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        Technologies
+                                    </Link>
+                                    <Link
+                                        to="/capabilities/sub2"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        ERP
+                                    </Link>
+                                    <Link
+                                        to="/capabilities/sub3"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        Digital Transformation
+                                    </Link>
+                                    <Link
+                                        to="/capabilities/sub4"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        Managed Services
+                                    </Link>
+                                </div>
+                            </div>
                         )}
                     </div>
-                    {/* Industries Dropdown */}
-                    <div
-                        className="relative"
-                        ref={industriesRef}
-                        onMouseEnter={() => handleMouseEnter('industries')}
-                        onMouseLeave={() => handleMouseLeave('industries')}
-                    >
+
+                    <div className="relative">
                         <button
-                            onClick={() => toggleDropdown('industries')}
-                            className="nav-link flex gap-2 items-center justify-center"
+                            onClick={toggleIndustriesDropdown}
+                            className="nav-link focus:outline-none flex items-center"
                         >
-                            Industries{' '}
-                            {isDropdownOpen.industries ? (
-                                <FaChevronUp />
-                            ) : (
-                                <FaChevronDown />
-                            )}
-                        </button>
-                        {isDropdownOpen.industries && (
-                            <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                exit="hidden"
-                                variants={dropdownVariants}
-                                className="absolute mt-2 w-64 bg-[#2C3443] text-gray-500 rounded-md shadow-lg z-20"
-                                onMouseEnter={() =>
-                                    handleMouseEnter('industries')
-                                }
-                                onMouseLeave={() =>
-                                    handleMouseLeave('industries')
-                                }
+                            Industries
+                            <svg
+                                className={`ml-2 transition-transform duration-300 ${
+                                    isIndustriesDropdownOpen
+                                        ? 'transform rotate-180'
+                                        : ''
+                                }`}
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                             >
-                                <Link
-                                    to="/industries/sub1"
-                                    className=" px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white flex justify-between items-center"
-                                >
-                                    <button>ERP</button>
-                                    <FaChevronRight />
-                                </Link>
-                                <Link
-                                    to="/industries/sub
-                                2"
-                                    className="px-4 py-2 transition-colors duration-300 ease-in-out hover:text-white flex justify-between items-center"
-                                >
-                                    Digital Transformation
-                                    <FaChevronRight />
-                                </Link>
-                            </motion.div>
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        {isIndustriesDropdownOpen && (
+                            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                                <div className="py-1">
+                                    <Link
+                                        to="/industries/sub1"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        ERP
+                                    </Link>
+                                    <Link
+                                        to="/industries/sub2"
+                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        Digital Transformation
+                                    </Link>
+                                </div>
+                            </div>
                         )}
                     </div>
+
+                    <Link to="/erp" className="nav-link">
+                        ERP
+                    </Link>
                     <Link to="/references" className="nav-link">
                         References
                     </Link>
@@ -269,12 +203,12 @@ const Navbar = () => {
                         Associates
                     </Link>
                     <Link to="/contact-us" className="nav-link">
-                        Contact Us
+                        Contact US
                     </Link>
                 </div>
                 <div>
-                    <button className="text-gray-400 rounded-md bg-blue-600 p-2">
-                        Theme Toggler
+                    <button className="text-gray-400 text-lg p-2">
+                        <ThemeToggler />
                     </button>
                 </div>
             </div>

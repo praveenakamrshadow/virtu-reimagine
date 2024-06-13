@@ -1,61 +1,73 @@
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { FiMoon, FiSun } from 'react-icons/fi';
+const ThemeToggler = () => {
+    const customStyles = `
+        .switch {
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
 
-const TOGGLE_CLASSES =
-    'text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10';
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-const Example = () => {
-    const [selected, setSelected] = useState('light');
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fafafa;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+  ;
+ transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+    `;
+
     return (
-        <div
-            className={`grid h-[200px] place-content-center px-4 transition-colors ${
-                selected === 'light' ? 'bg-white' : 'bg-slate-900'
-            }`}
-        >
-            <SliderToggle selected={selected} setSelected={setSelected} />
+        <div>
+            <label className="switch">
+                <input type="checkbox" />
+                <span className="slider"></span>
+            </label>
+            <style>{customStyles}</style>
         </div>
     );
 };
 
-const SliderToggle = ({ selected, setSelected }) => {
-    return (
-        <div className="relative flex w-fit items-center rounded-full">
-            <button
-                className={`${TOGGLE_CLASSES} ${
-                    selected === 'light' ? 'text-white' : 'text-slate-300'
-                }`}
-                onClick={() => {
-                    setSelected('light');
-                }}
-            >
-                <FiMoon className="relative z-10 text-lg md:text-sm" />
-                <span className="relative z-10">Light</span>
-            </button>
-            <button
-                className={`${TOGGLE_CLASSES} ${
-                    selected === 'dark' ? 'text-white' : 'text-slate-800'
-                }`}
-                onClick={() => {
-                    setSelected('dark');
-                }}
-            >
-                <FiSun className="relative z-10 text-lg md:text-sm" />
-                <span className="relative z-10">Dark</span>
-            </button>
-            <div
-                className={`absolute inset-0 z-0 flex ${
-                    selected === 'dark' ? 'justify-end' : 'justify-start'
-                }`}
-            >
-                <motion.span
-                    layout
-                    transition={{ type: 'spring', damping: 15, stiffness: 250 }}
-                    className="h-full w-1/2 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600"
-                />
-            </div>
-        </div>
-    );
-};
-
-export default Example;
+export default ThemeToggler;

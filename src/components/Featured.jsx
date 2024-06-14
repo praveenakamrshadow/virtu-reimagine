@@ -5,7 +5,7 @@ const Featured = () => {
     return (
         <div
             id="featured"
-            className="flex flex-col items-center h-[123vh] w-full bg-[#151515]"
+            className="flex flex-col items-center h-[123vh] w-full bg-[#111722]"
         >
             <h1 className="mt-10  lexend-normal text-xl text-center text-white">
                 INTERNATIONAL IT GROUP AT THE CROSSROAD OF MOBILE, WEB AND

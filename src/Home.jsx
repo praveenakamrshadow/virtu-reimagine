@@ -7,6 +7,7 @@ import Collaboration from './components/Collaboration';
 import Marquee from './components/Marquee';
 import Testimonial from './components/Testimonial';
 import NavBar from './components/NavBar';
+import ClientsPortfolio from './components/ClientsPortfolio';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Services />
             <ServicesTwo />
             <Testimonial />
+            <ClientsPortfolio />
             <Marquee />
             <Collaboration />
             <Footer />

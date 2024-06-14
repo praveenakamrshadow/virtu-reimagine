@@ -9,13 +9,13 @@ const Services = () => {
             },
         },
         initial: {
-            filter: 'blur(0.2px)',
+            filter: 'blur(0.5px)',
         },
     };
 
     return (
         <>
-            <div className="h-screen w-full bg-[#151515] text-white flex flex-col items-center justify-center gap-x-10 p-[2%] ">
+            <div className="h-screen w-full bg-[#111722] text-white flex flex-col items-center justify-center gap-x-10 p-[2%] ">
                 <h1 className="text-3xl font-bold lexend-bold tracking-tight text-white sm:text-4xl mt-10">
                     SERVICES WE OFFER
                 </h1>

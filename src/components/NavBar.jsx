@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggler from '../utils/ThemeToggler';
+import { FaChevronRight } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isCorporateDropdownOpen, setIsCorporateDropdownOpen] =
@@ -9,24 +10,26 @@ const Navbar = () => {
         useState(false);
     const [isIndustriesDropdownOpen, setIsIndustriesDropdownOpen] =
         useState(false);
+    const [isErpDropdownOpen, setIsErpDropdownOpen] = useState(false);
 
     const toggleCorporateDropdown = () => {
         setIsCorporateDropdownOpen(!isCorporateDropdownOpen);
-        // Close other dropdowns
         setIsCapabilitiesDropdownOpen(false);
         setIsIndustriesDropdownOpen(false);
+        setIsErpDropdownOpen(false);
     };
 
     const toggleCapabilitiesDropdown = () => {
         setIsCapabilitiesDropdownOpen(!isCapabilitiesDropdownOpen);
-        // Close other dropdowns
         setIsCorporateDropdownOpen(false);
         setIsIndustriesDropdownOpen(false);
     };
 
+    const toggleErpDropdown = () => {
+        setIsErpDropdownOpen(!isErpDropdownOpen);
+    };
     const toggleIndustriesDropdown = () => {
         setIsIndustriesDropdownOpen(!isIndustriesDropdownOpen);
-        // Close other dropdowns
         setIsCorporateDropdownOpen(false);
         setIsCapabilitiesDropdownOpen(false);
     };
@@ -69,17 +72,17 @@ const Navbar = () => {
                             </svg>
                         </button>
                         {isCorporateDropdownOpen && (
-                            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
-                                <div className="py-1">
+                            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-[#2C3443] dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                                <div className="py-1 text-gray-400">
                                     <Link
-                                        to="/corporate/sub1"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                        to="/about-us"
+                                        className="block px-4 py-2 transition-all delay-100 text-sm hover:text-white"
                                     >
                                         About Us
                                     </Link>
                                     <Link
-                                        to="/corporate/sub2"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                        to="/carriers"
+                                        className="block px-4 py-2 transition-all delay-100 text-sm hover:text-white"
                                     >
                                         Carriers
                                     </Link>
@@ -114,31 +117,71 @@ const Navbar = () => {
                             </svg>
                         </button>
                         {isCapabilitiesDropdownOpen && (
-                            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
-                                <div className="py-1">
+                            <div className="absolute mt-2 w-60 right-0 rounded-md shadow-lg bg-[#2C3443] dark:bg-gray-800 ring-1 ring-black ring-opacity-5 transition-all delay-100">
+                                <div className="py-1 text-gray-400">
                                     <Link
-                                        to="/capabilities/sub1"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                        to="/technologies"
+                                        className="block px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
                                     >
                                         Technologies
                                     </Link>
-                                    <Link
-                                        to="/capabilities/sub2"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                                    >
-                                        ERP
-                                    </Link>
+                                    <div className="relative">
+                                        <button
+                                            onClick={toggleErpDropdown}
+                                            className=" px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100 w-full flex items-center justify-between"
+                                        >
+                                            ERP
+                                            <svg
+                                                className={`ml-2 transition-transform duration-300 ${
+                                                    isErpDropdownOpen
+                                                        ? 'transform rotate-180'
+                                                        : ''
+                                                }`}
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            >
+                                                <polyline points="6 9 12 15 18 9" />
+                                            </svg>
+                                        </button>
+                                        {isErpDropdownOpen && (
+                                            <div className="absolute top-0 left-full mt-0 w-60 rounded-md shadow-lg bg-[#2C3443] dark:bg-gray-800 ring-1 ring-black ring-opacity-5 transition-all delay-100">
+                                                <div className="py-1 text-gray-400">
+                                                    <Link
+                                                        to="/capabilities/erp/sub1"
+                                                        className="block px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
+                                                    >
+                                                        Option 1
+                                                    </Link>
+                                                    <Link
+                                                        to="/capabilities/erp/sub2"
+                                                        className="block px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
+                                                    >
+                                                        Option 2
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
                                     <Link
                                         to="/capabilities/sub3"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                        className="flex items-center justify-between px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
                                     >
                                         Digital Transformation
+                                        <FaChevronRight />
                                     </Link>
                                     <Link
                                         to="/capabilities/sub4"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                        className="flex items-center justify-between px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
                                     >
                                         Managed Services
+                                        <FaChevronRight />
                                     </Link>
                                 </div>
                             </div>
@@ -171,28 +214,27 @@ const Navbar = () => {
                             </svg>
                         </button>
                         {isIndustriesDropdownOpen && (
-                            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
-                                <div className="py-1">
+                            <div className="absolute mt-2 w-60 rounded-md shadow-lg bg-[#2C3443] dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                                <div className="py-1 text-gray-500">
                                     <Link
                                         to="/industries/sub1"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                        className="flex items-center justify-between px-4 py-2 text-sm  dark:text-gray-300 hover:text-white transition-all delay-100 dark:hover:bg-gray-700"
                                     >
                                         ERP
+                                        <FaChevronRight />
                                     </Link>
                                     <Link
                                         to="/industries/sub2"
-                                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                        className="flex items-center justify-between px-4 py-2 text-sm  dark:text-gray-300 hover:text-white transition-all delay-100 dark:hover:bg-gray-700"
                                     >
                                         Digital Transformation
+                                        <FaChevronRight />
                                     </Link>
                                 </div>
                             </div>
                         )}
                     </div>
 
-                    <Link to="/erp" className="nav-link">
-                        ERP
-                    </Link>
                     <Link to="/references" className="nav-link">
                         References
                     </Link>

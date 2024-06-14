@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { TimelineMax } from 'gsap';
 import { FaPlay } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Button from '../utils/Button';
@@ -16,36 +15,7 @@ const Hero = () => {
         }
     };
 
-    useEffect(() => {
-        const tl = new TimelineMax({ delay: 0.5 });
-
-        // Animation to make each h1 appear, stay visible, and then disappear
-        tl.fromTo(
-            heroRef.current.children[0], // First h1
-            { opacity: 0 },
-            { opacity: 1, duration: 1, ease: 'power3.out' }
-        )
-            .to(
-                heroRef.current.children[0], // First h1
-                { opacity: 0, duration: 1, ease: 'power3.in' },
-                '+=1' // Delay before starting the next animation
-            )
-            .fromTo(
-                heroRef.current.children[1], // Second h1
-                { opacity: 0 },
-                { opacity: 1, duration: 1, ease: 'power3.out' }
-            )
-            .to(
-                heroRef.current.children[1], // Second h1
-                { opacity: 0, duration: 1, ease: 'power3.in' },
-                '+=1' // Delay before starting the next animation
-            )
-            .fromTo(
-                heroRef.current.children[2], // Third h1
-                { opacity: 0 },
-                { opacity: 1, duration: 1, ease: 'power3.out' }
-            );
-    }, []);
+    useEffect(() => {}, []);
 
     return (
         <div className="dark:bg-gray-900 text-white dark:text-white">
@@ -57,12 +27,6 @@ const Hero = () => {
                             <span className="block text-3xl text-end">
                                 With Expertise
                             </span>
-                        </h1>
-                        <h1 className="text-[2.8rem] lexend-bold text-center top-10 left-[0.8rem]">
-                            Second Heading
-                        </h1>
-                        <h1 className="text-[2.8rem] lexend-bold text-center top-10 left-[0.8rem]">
-                            Third Heading
                         </h1>
                     </div>
                     <p className="text-gray-400 inter-normal mt-16 p-3">

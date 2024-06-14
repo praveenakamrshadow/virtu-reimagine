@@ -2,10 +2,11 @@ import { FaFacebookSquare, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 import { GiHouse } from 'react-icons/gi';
 import { ImOffice } from 'react-icons/im';
 import { MdOutlineMail } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className="bg-[#111722] py-10 inter-normal sm:pt-16 lg:pt-24">
+        <div className="bg-[#111722] py-10 inter-normal sm:pt-16 lg:pt-12">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div className="col-span-2 text-2xl md:col-span-3 lg:col-span-2 lg:pr-8">
@@ -55,47 +56,47 @@ const Footer = () => {
 
                         <ul className="mt-6 space-y-4 font-semibold text-gray-500">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/about-us"
                                     title=""
                                     className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
                                     {' '}
                                     About Us{' '}
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/contact-us"
                                     title=""
                                     className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
                                     {' '}
-                                    Features{' '}
-                                </a>
+                                    Contact Us{' '}
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/references"
                                     title=""
                                     className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
                                     {' '}
                                     Works{' '}
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/carriers"
                                     title=""
                                     className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
                                     {' '}
                                     Career{' '}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -164,7 +165,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <hr className="mt-16 mb-10 border-gray-200" />
+                <hr className="mt-10 mb-5 border-gray-200" />
                 <p className="text-sm text-center text-gray-500">
                     © 2009 - 2024 Virtu Tech Solutions LLC. All Rights Reserved
                 </p>

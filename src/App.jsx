@@ -1,6 +1,4 @@
-import { useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Services from './components/Services';
 import ServicesTwo from './components/ServicesTwo';
@@ -14,28 +12,14 @@ import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
 import Carriers from './components/Carriers';
 import Technologies from './components/Technologies';
+import BackToTop from './components/BackToTop';
 
 const App = () => {
-    const scrollRef = useRef(null);
-
-    useEffect(() => {
-        let scroll;
-        if (scrollRef.current) {
-            scroll = new LocomotiveScroll({
-                el: scrollRef.current,
-                smooth: true,
-            });
-        }
-
-        return () => {
-            if (scroll) scroll.destroy();
-        };
-    }, []);
-
     return (
         <>
+            <BackToTop />
             <Router>
-                <div ref={scrollRef} className="lexend custom-gradient">
+                <div className="lexend custom-gradient">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/featured" element={<Featured />} />

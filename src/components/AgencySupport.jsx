@@ -6,7 +6,7 @@ const AgencySupport = () => {
         <div>
             <div>
                 <Navbar />
-                <div className="text-3xl lexend-bold text-white p-4 ml-8">
+                <div className="text-3xl lexend-bold text-white p-4 ml-4">
                     Agency Support
                 </div>
                 <div className="text-white mb-16 mt-16 ml-8 p-4 flex items-center text-start justify-center">

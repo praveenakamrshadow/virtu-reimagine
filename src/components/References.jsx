@@ -10,13 +10,12 @@ import {
 import { IoIosAppstore } from 'react-icons/io';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
 import { MdOutlineWeb } from 'react-icons/md';
-import { Link } from 'react-router-dom';
 
 const References = () => {
     return (
         <div>
             <Navbar />
-            <h1 className="uppercase text-3xl mt-4 mb-10 text-white text-start ml-12 lexend-bold">
+            <h1 className="uppercase text-3xl mt-8  mb-10 text-white text-start ml-6 lexend-bold">
                 REFERENCES
             </h1>
             <div className="p-4 flex items-center justify-center flex-wrap mb-8 gap-14">

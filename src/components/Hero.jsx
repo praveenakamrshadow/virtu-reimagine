@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { FaPlay } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Button from '../utils/Button';
@@ -14,8 +14,6 @@ const Hero = () => {
             });
         }
     };
-
-    useEffect(() => {}, []);
 
     return (
         <div className="dark:bg-gray-900 text-white dark:text-white">

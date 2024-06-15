@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggler from '../utils/ThemeToggler';
 import { FaChevronRight } from 'react-icons/fa';
@@ -11,6 +11,11 @@ const Navbar = () => {
     const [isIndustriesDropdownOpen, setIsIndustriesDropdownOpen] =
         useState(false);
     const [isErpDropdownOpen, setIsErpDropdownOpen] = useState(false);
+    const [
+        isDigitalTransformationDropdownOpen,
+        setIsDigitalTransformationDropdownOpen,
+    ] = useState(false);
+    const [navbarBg, setNavbarBg] = useState('bg-transparent');
 
     const toggleCorporateDropdown = () => {
         setIsCorporateDropdownOpen(!isCorporateDropdownOpen);
@@ -28,14 +33,35 @@ const Navbar = () => {
     const toggleErpDropdown = () => {
         setIsErpDropdownOpen(!isErpDropdownOpen);
     };
+    const toggleEDigitalTransformationDropdown = () => {
+        setIsErpDropdownOpen(!isErpDropdownOpen);
+    };
     const toggleIndustriesDropdown = () => {
         setIsIndustriesDropdownOpen(!isIndustriesDropdownOpen);
         setIsCorporateDropdownOpen(false);
         setIsCapabilitiesDropdownOpen(false);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setNavbarBg('bg-[#111722]');
+            } else {
+                setNavbarBg('bg-transparent');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="navbar bg-transparent lexend-normal p-10 sticky top-0 z-50">
+        <nav
+            className={`navbar ${navbarBg} lexend-normal p-[1.2rem] sticky top-0 z-50 transition-colors duration-300`}
+        >
             <div className="flex justify-between items-center">
                 <div>
                     <Link to={'/'}>
@@ -216,20 +242,96 @@ const Navbar = () => {
                         {isIndustriesDropdownOpen && (
                             <div className="absolute mt-2 w-60 rounded-md shadow-lg bg-[#2C3443] dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
                                 <div className="py-1 text-gray-500">
-                                    <Link
-                                        to="/industries/sub1"
-                                        className="flex items-center justify-between px-4 py-2 text-sm  dark:text-gray-300 hover:text-white transition-all delay-100 dark:hover:bg-gray-700"
-                                    >
-                                        ERP
-                                        <FaChevronRight />
-                                    </Link>
-                                    <Link
-                                        to="/industries/sub2"
-                                        className="flex items-center justify-between px-4 py-2 text-sm  dark:text-gray-300 hover:text-white transition-all delay-100 dark:hover:bg-gray-700"
-                                    >
-                                        Digital Transformation
-                                        <FaChevronRight />
-                                    </Link>
+                                    <div className="relative">
+                                        <button
+                                            onClick={toggleErpDropdown}
+                                            className=" px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100 w-full flex items-center justify-between"
+                                        >
+                                            ERP
+                                            <svg
+                                                className={`ml-2 transition-transform duration-300 ${
+                                                    isErpDropdownOpen
+                                                        ? 'transform rotate-180'
+                                                        : ''
+                                                }`}
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            >
+                                                <polyline points="6 9 12 15 18 9" />
+                                            </svg>
+                                        </button>
+                                        {isErpDropdownOpen && (
+                                            <div className="absolute top-0 left-full mt-0 w-60 rounded-md shadow-lg bg-[#2C3443] dark:bg-gray-800 ring-1 ring-black ring-opacity-5 transition-all delay-100">
+                                                <div className="py-1 text-gray-400">
+                                                    <Link
+                                                        to="/capabilities/erp/sub1"
+                                                        className="block px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
+                                                    >
+                                                        Option 1
+                                                    </Link>
+                                                    <Link
+                                                        to="/capabilities/erp/sub2"
+                                                        className="block px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
+                                                    >
+                                                        Option 2
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="relative">
+                                        <button
+                                            onClick={
+                                                toggleEDigitalTransformationDropdown
+                                            }
+                                            className=" px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100 w-full flex items-center justify-between"
+                                        >
+                                            Digital Transformation
+                                            <svg
+                                                className={`ml-2 transition-transform duration-300 ${
+                                                    isErpDropdownOpen
+                                                        ? 'transform rotate-180'
+                                                        : ''
+                                                }`}
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            >
+                                                <polyline points="6 9 12 15 18 9" />
+                                            </svg>
+                                        </button>
+                                        {isErpDropdownOpen && (
+                                            <div className="absolute top-0 left-full mt-0 w-60 rounded-md shadow-lg bg-[#2C3443] dark:bg-gray-800 ring-1 ring-black ring-opacity-5 transition-all delay-100">
+                                                <div className="py-1 text-gray-400">
+                                                    <Link
+                                                        to="/capabilities/erp/sub1"
+                                                        className="block px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
+                                                    >
+                                                        Option 1
+                                                    </Link>
+                                                    <Link
+                                                        to="/capabilities/erp/sub2"
+                                                        className="block px-4 py-2 text-sm dark:text-gray-300 hover:text-white dark:hover:bg-gray-700 transition-all delay-100"
+                                                    >
+                                                        Option 2
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         )}

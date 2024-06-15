@@ -13,7 +13,7 @@ const Footer = () => {
                         <Link to={'/'}>
                             <img
                                 className="w-auto h-9"
-                                src="/public/assets/images/virtu-white.png"
+                                src="/assets/images/virtu-white.png"
                                 alt=""
                             />
                         </Link>

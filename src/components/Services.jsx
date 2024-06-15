@@ -22,7 +22,7 @@ const Services = () => {
                 <div className="flex flex-wrap justify-center mb-6 gap-x-10">
                     <motion.div className="w-[40%] h-[40%] cursor-pointer mt-10 rounded-md overflow-hidden relative group">
                         <motion.img
-                            src="/public/assets/images/mobile-solutions.jpeg"
+                            src="/assets/images/mobile-solutions.jpeg"
                             alt="First card image"
                             className="w-full h-full object-cover filter grayscale transition duration-200 group-hover:filter-none transform group-hover:scale-110"
                             variants={imageVariants}

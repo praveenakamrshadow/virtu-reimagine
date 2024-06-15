@@ -79,7 +79,7 @@ const Button = () => {
 
 .animated-button:active {
   scale: 0.95;
-  box-shadow: 0 0 0 4px greenyellow;
+  box-shadow: 0 0 0 4px blueskyblue;
 }
 
 .animated-button:hover .circle {

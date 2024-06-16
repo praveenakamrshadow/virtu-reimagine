@@ -8,7 +8,7 @@ const ContactUs = () => {
             <div>
                 <Navbar />
                 <div>
-                    <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mb-20 mt-14 mx-auto max-w-4xl bg-white inter-normal rounded-md">
+                    <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mb-28 mt-14 mx-auto max-w-4xl bg-white inter-normal rounded-md">
                         <div>
                             <h1 className="text-black text-3xl lexend-bold font-extrabold">
                                 Let's Talk

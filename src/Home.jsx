@@ -7,10 +7,18 @@ import Collaboration from './components/Collaboration';
 import Marquee from './components/Marquee';
 import Testimonial from './components/Testimonial';
 import ClientsPortfolio from './components/ClientsPortfolio';
+import Footer from './components/Footer';
+import Navbar from './components/NavBar';
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
+            <Navbar />
             <Hero />
             <Featured />
             <Services />
@@ -20,6 +28,7 @@ const Home = () => {
             <Marquee />
             <Collaboration />
             <Outlet />
+            <Footer />
         </div>
     );
 };

@@ -16,8 +16,6 @@ import Collaboration from './components/Collaboration';
 import Marquee from './components/Marquee';
 import Testimonial from './components/Testimonial';
 import ClientsPortfolio from './components/ClientsPortfolio';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -25,7 +23,6 @@ const App = () => {
             <BackToTop />
             <Router>
                 <div className="lexend custom-gradient">
-                    <NavBar />
                     <Routes>
                         <Route path="/" element={<Home />}>
                             <Route path="featured" element={<Featured />} />
@@ -63,7 +60,6 @@ const App = () => {
                             element={<AgencySupport />}
                         />
                     </Routes>
-                    <Footer />
                 </div>
             </Router>
         </>

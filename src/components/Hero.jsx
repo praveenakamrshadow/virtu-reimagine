@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className="p-16 h-screen w-screen flex flex-col items-center justify-center">
                     <div ref={heroRef} className="w-full">
                         <h1 className="text-[2.8rem] lexend-bold text-center top-10 left-[0.8rem]">
-                            Unlocking The Power Of SAP{' '}
+                            Unlock The Power Of AI/ML{' '}
                             <span className="block text-3xl text-end">
                                 With Expertise
                             </span>

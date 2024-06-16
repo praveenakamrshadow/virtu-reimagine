@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggler from '../utils/ThemeToggler';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 const Navbar = () => {
     const [navbarBg, setNavbarBg] = useState('bg-transparent');
+    const [openDropdown, setOpenDropdown] = useState(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,11 +25,21 @@ const Navbar = () => {
         };
     }, []);
 
+    const toggleDropdown = (dropdown) => {
+        setOpenDropdown((prev) => (prev === dropdown ? null : dropdown));
+    };
+
+    const dropdownVariants = {
+        hidden: { opacity: 0, y: -10 },
+        visible: { opacity: 1, y: 0 },
+    };
+
     return (
         <nav
-            className={`navbar ${navbarBg} lexend-normal p-[1.2rem] sticky top-0 z-50 transition-colors duration-300`}
+            className={`navbar ${navbarBg} lexend-normal p-[1.4rem] sticky top-0 z-50 transition-colors duration-300`}
         >
             <div className="flex justify-between items-center">
+                {/* nav-logo */}
                 <div>
                     <Link to={'/'}>
                         <img
@@ -34,23 +48,159 @@ const Navbar = () => {
                         />
                     </Link>
                 </div>
-                <div className="flex items-center mr-12 space-x-8 relative">
-                    <Link to="/references" className="nav-link btn-equal">
-                        Capabilities
-                    </Link>
-                    <Link to="/references" className="nav-link btn-equal">
+
+                {/* nav-links */}
+                <div className="flex items-center justify-center mr-12 space-x-8  relative">
+                    {/* dropdowns */}
+                    {/* corporate */}
+                    <div className="relative">
+                        <button
+                            onClick={() => toggleDropdown('corporate')}
+                            className="nav-link flex items-center"
+                        >
+                            Corporate
+                            {openDropdown === 'corporate' ? (
+                                <IoIosArrowUp className="ml-1" />
+                            ) : (
+                                <IoIosArrowDown className="ml-1" />
+                            )}
+                        </button>
+                        <AnimatePresence>
+                            {openDropdown === 'corporate' && (
+                                <motion.div
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="hidden"
+                                    variants={dropdownVariants}
+                                    className="absolute mt-2 w-48 bg-[#2C3443]  shadow-lg rounded-md py-2"
+                                >
+                                    <Link
+                                        to="/about-us"
+                                        className="block px-4 py-2 text-gray-500 transition-all delay-100  hover:text-white"
+                                    >
+                                        About Us
+                                    </Link>
+                                    <Link
+                                        to="/carriers"
+                                        className="block px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    >
+                                        Carriers
+                                    </Link>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+
+                    {/* capabilities */}
+                    <div className="relative">
+                        <button
+                            onClick={() => toggleDropdown('capabilities')}
+                            className="nav-link flex items-center"
+                        >
+                            Capabilities
+                            {openDropdown === 'capabilities' ? (
+                                <IoIosArrowUp className="ml-1" />
+                            ) : (
+                                <IoIosArrowDown className="ml-1" />
+                            )}
+                        </button>
+                        <AnimatePresence>
+                            {openDropdown === 'capabilities' && (
+                                <motion.div
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="hidden"
+                                    variants={dropdownVariants}
+                                    className="absolute mt-2 w-60 bg-[#2C3443] shadow-lg rounded-md py-2"
+                                >
+                                    <Link
+                                        to="/technologies"
+                                        className="block px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    >
+                                        Technologies
+                                    </Link>
+                                    <Link
+                                        to="/capabilities-2"
+                                        className="flex items-center justify-between px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    >
+                                        ERP
+                                        <MdKeyboardArrowRight />
+                                    </Link>
+                                    <Link
+                                        to="/capabilities-2"
+                                        className="flex items-center justify-between  px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    >
+                                        Digital Transformation
+                                        <MdKeyboardArrowRight />
+                                    </Link>
+                                    <Link
+                                        to="/capabilities-2"
+                                        className="flex items-center justify-between  px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    >
+                                        Managed Services
+                                        <MdKeyboardArrowRight />
+                                    </Link>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+
+                    {/* industries */}
+                    <div className="relative">
+                        <button
+                            onClick={() => toggleDropdown('industries')}
+                            className="nav-link flex items-center"
+                        >
+                            Industries
+                            {openDropdown === 'industries' ? (
+                                <IoIosArrowUp className="ml-1" />
+                            ) : (
+                                <IoIosArrowDown className="ml-1" />
+                            )}
+                        </button>
+                        <AnimatePresence>
+                            {openDropdown === 'industries' && (
+                                <motion.div
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="hidden"
+                                    variants={dropdownVariants}
+                                    className="absolute mt-2 w-60 bg-[#2C3443] shadow-lg rounded-md py-2"
+                                >
+                                    <Link
+                                        to="/industries-1"
+                                        className="flex items-center justify-between  px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    >
+                                        Industries
+                                        <MdKeyboardArrowRight />
+                                    </Link>
+                                    <Link
+                                        to="/industries-2"
+                                        className="flex items-center justify-between  px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    >
+                                        Digital Transformation
+                                        <MdKeyboardArrowRight />
+                                    </Link>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+
+                    <Link to="/references" className="nav-link">
                         References
                     </Link>
-                    <Link to="/agency-support" className="nav-link btn-equal">
+                    <Link to="/agency-support" className="nav-link">
                         Agency Support
                     </Link>
-                    <Link to="/associates" className="nav-link btn-equal">
+                    <Link to="/associates" className="nav-link">
                         Associates
                     </Link>
-                    <Link to="/contact-us" className="nav-link btn-equal">
+                    <Link to="/contact-us" className="nav-link">
                         Contact US
                     </Link>
                 </div>
+
+                {/* Theme toggler */}
                 <div>
                     <button className="text-gray-400 text-lg p-2">
                         <ThemeToggler />

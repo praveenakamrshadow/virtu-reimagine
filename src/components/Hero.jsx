@@ -51,7 +51,11 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center h-screen w-screen  p-8">
-                    <img src="/assets/images/AI-&-ML.png" alt="" />
+                    <img
+                        src="/assets/images/machineLearning.svg"
+                        alt="image"
+                        className="w-[80%]"
+                    />
                 </div>
             </div>
         </div>

@@ -2,7 +2,6 @@ import { FaFacebookSquare, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 import { GiHouse } from 'react-icons/gi';
 import { ImOffice } from 'react-icons/im';
 import { IoMail } from 'react-icons/io5';
-import { MdOutlineMail } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {

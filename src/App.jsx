@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Featured from './components/Featured';
@@ -16,8 +17,21 @@ import Collaboration from './components/Collaboration';
 import Marquee from './components/Marquee';
 import Testimonial from './components/Testimonial';
 import ClientsPortfolio from './components/ClientsPortfolio';
+import Loader from './utils/Loader';
 
 const App = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    }, []);
+
+    if (loading) {
+        return <Loader />;
+    }
+
     return (
         <>
             <BackToTop />

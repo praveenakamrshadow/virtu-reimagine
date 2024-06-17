@@ -36,9 +36,7 @@ const Hero = () => {
                     </p>
                     <div className="flex w-full p-4 mt-10 gap-10">
                         <div className="lexend-normal flex-shrink-0">
-                            <button onClick={handleScrollToFeatured}>
-                                <Button />
-                            </button>
+                            <Button onClick={handleScrollToFeatured} />
                         </div>
                         <motion.button
                             whileHover={{ scale: 1.1 }}

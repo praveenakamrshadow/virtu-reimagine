@@ -1,6 +1,7 @@
 import { FaFacebookSquare, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 import { GiHouse } from 'react-icons/gi';
 import { ImOffice } from 'react-icons/im';
+import { IoMail } from 'react-icons/io5';
 import { MdOutlineMail } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
@@ -103,7 +104,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className=" w-72">
+                    <div className="w-72">
                         <p className="text-sm font-semibold tracking-widest  text-white uppercase">
                             Contact us - USA
                         </p>
@@ -113,16 +114,16 @@ const Footer = () => {
                                 Virtu Tech Solutions LLC.
                             </li>
                             <li className="gap-2 flex justify-start items-center">
-                                <GiHouse className="text-5xl" />
-                                METRO OFFICE PARK STREET 1, LOT 6, SUITE B-04
-                                GUAYNABO, PR, USA-00968
+                                <GiHouse className="text-3xl" />
+                                Metro Office Park Street 1, Lot 6, Suite B-04
+                                Guaynabo, <br /> PR, USA-00968
                             </li>
                             <li className="gap-2 flex justify-start items-center">
                                 <FaPhoneAlt />
                                 +1 (787) 598-1489
                             </li>
                             <li className="gap-2 flex justify-start items-center">
-                                <MdOutlineMail />
+                                <IoMail />
                                 <a
                                     className="hover:text-white transition-all duration-100"
                                     href="mailto:info@virtutechsolutions.com"
@@ -156,7 +157,7 @@ const Footer = () => {
                                 +91 4040221401
                             </li>
                             <li className="gap-2 flex justify-start items-center">
-                                <MdOutlineMail />
+                                <IoMail />
                                 <a
                                     className="hover:text-white transition-all duration-100"
                                     href="mailto:info@virtutechsolutions.com"

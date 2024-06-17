@@ -1,6 +1,7 @@
 import { FaPhoneAlt } from 'react-icons/fa';
 import Footer from './Footer';
 import Navbar from './NavBar';
+import { MdOutlineLocationOn, MdOutlinePhone } from 'react-icons/md';
 
 const ContactUs = () => {
     return (
@@ -18,6 +19,46 @@ const ContactUs = () => {
                                 help? Then reach out we'd love to hear about
                                 your project and provide help.
                             </p>
+
+                            <div className="mt-8">
+                                <ul className="mt-4">
+                                    <li className="flex items-center">
+                                        <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                            <MdOutlineLocationOn className="text-[#007bff] text-xl" />
+                                        </div>
+                                        <p
+                                            href="mailto:info@virtutechsolutions.com"
+                                            className="text-[#007bff] text-sm ml-4"
+                                        >
+                                            <strong>
+                                                2nd Floor, Nukala Residency
+                                                Jaihind Enclave, Madhapur
+                                                Hyderabad, TS, India-500081
+                                            </strong>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="mt-8">
+                                <ul className="mt-4">
+                                    <li className="flex items-center">
+                                        <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                            <MdOutlineLocationOn className="text-[#007bff] text-xl" />
+                                        </div>
+                                        <p
+                                            href="mailto:info@virtutechsolutions.com"
+                                            className="text-[#007bff] text-sm ml-4"
+                                        >
+                                            <strong>
+                                                Metro Office Park Street 1, Lot
+                                                6, Suite B-04 Guaynabo, PR,
+                                                USA-00968
+                                            </strong>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
 
                             <div className="mt-8">
                                 <ul className="mt-4">
@@ -52,7 +93,7 @@ const ContactUs = () => {
                                 <ul className="mt-4">
                                     <li className="flex items-center">
                                         <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                            <FaPhoneAlt className="text-blue-600" />
+                                            <MdOutlinePhone className="text-blue-600 text-xl" />
                                         </div>
                                         <div className="text-[#007bff] text-sm ml-4">
                                             <strong>
@@ -78,7 +119,7 @@ const ContactUs = () => {
                                 <ul className="mt-4">
                                     <li className="flex items-center">
                                         <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                            <FaPhoneAlt className="text-blue-600" />
+                                            <MdOutlinePhone className="text-blue-600 text-xl" />
                                         </div>
                                         <div className="text-[#007bff] flex gap-4 text-sm ml-4">
                                             <strong>

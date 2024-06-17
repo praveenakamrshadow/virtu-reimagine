@@ -41,7 +41,12 @@ const Navbar = () => {
             <div className="flex justify-between items-center">
                 {/* nav-logo */}
                 <div>
-                    <Link to={'/'}>
+                    <Link
+                        to={'/'}
+                        onClick={() =>
+                            window.scrollTo({ top: 0, behavior: 'smooth' })
+                        }
+                    >
                         <img
                             src="../assets/images/virtu-white.png"
                             alt="virtu-logo"
@@ -168,10 +173,10 @@ const Navbar = () => {
                                     className="absolute mt-2 w-60 bg-[#2C3443] shadow-lg rounded-md py-2"
                                 >
                                     <Link
-                                        to="/industries-1"
+                                        to="/erp"
                                         className="flex items-center justify-between  px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
                                     >
-                                        Industries
+                                        ERP
                                         <MdKeyboardArrowRight />
                                     </Link>
                                     <Link
@@ -186,6 +191,7 @@ const Navbar = () => {
                         </AnimatePresence>
                     </div>
 
+                    {/* remaining nav  */}
                     <Link to="/references" className="nav-link">
                         References
                     </Link>

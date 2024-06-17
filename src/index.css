@@ -83,8 +83,3 @@
 .hover\:text-white:hover {
     color: #ffffff;
 }
-
-/* Locomotive custom css */
-.scroll-container {
-    overflow: hidden;
-}

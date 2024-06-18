@@ -1,190 +1,292 @@
-const ServicesTwo = () => {
+import React from 'react';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
+
+gsap.registerPlugin(ScrollTrigger);
+
+function ServiceType() {
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            gsap.set('.photo:not(:first-child)', { opacity: 0, scale: 0.5 });
+
+            const animation = gsap.to('.photo:not(:first-child)', {
+                opacity: 1,
+                scale: 1,
+                duration: 1,
+                stagger: 1,
+            });
+
+            ScrollTrigger.create({
+                trigger: '.gallery',
+                start: 'top top',
+                end: 'bottom bottom',
+                pin: '.rightblock',
+                animation: animation,
+                scrub: true,
+            });
+        });
+        return () => ctx.revert();
+    }, []);
     return (
-        <>
-            <div className="flex items-center justify-center">
-                <div className=" h-screen w-screen flex justify-center lexend-bold text-6xl text-white">
-                    <h1 className="mr-[12rem] mt-12">
-                        Services <br /> We Offer
-                    </h1>
-                </div>
+        <React.Fragment>
+            <h1 className="text-3xl font-bold text-center lexend-bold tracking-tight text-white sm:text-4xl mt-10">
+                DIVERSIFIED KNOW-HOW AND CUSTOMERS PROFILE
+            </h1>
+            <Box className="gallery lexend-bold" sx={{ display: 'flex' }}>
+                <Box
+                    className="left"
+                    sx={{
+                        width: '50%',
+                        marginLeft: 'auto',
+                        '& .details': {
+                            height: '100vh',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            width: '40vw',
+                            marginLeft: 'auto',
+                            color: '#fff',
+                            fontSize: '3rem',
+                        },
+                    }}
+                >
+                    <Box className="details p-4">
+                        <h1>ERP SAP Services</h1>
+                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                            Build modern intelligent enterprises with expert SAP
+                            consulting. Our experienced team offers end-to-end
+                            SAP consultancy, supporting implementation and
+                            upgrades for optimal financial and technical
+                            optimization. With a strong reputation and extensive
+                            experience in complex SAP implementations across
+                            various industries, we provide best practices and
+                            maximized return on investment.
+                        </p>
+                        <Link to={'/erp-sap'}>
+                            <button className="w-48 mt-8 relative py-2 px-8 text-black text-base font-bold  overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                                Learn More
+                            </button>
+                        </Link>
+                    </Box>
 
-                <div className=" h-screen w-screen  overflow-scroll overflow-x-auto overflow-y-visible lexend-bold">
-                    {/* stack-1 */}
-                    <div className="flex p-4 gap-4 ">
-                        <div className="relative bg-white w-[355px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <MdOutlineWeb className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    Web App <br /> Development
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    Engage users with an interactive application
-                                    built using the latest web development
-                                    technologies.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="w-1/2 flex flex-col gap-4">
-                            {' '}
-                            <div className="bg-white w-full rounded-md h-[50%] flex items-center cursor-pointer p-4 text-4xl hover:bg-black hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105">
-                                <div className="absolute top-0 left-0 bg-black h-full w-2 rounded-l-md"></div>
-                                React.js <br /> Development
-                            </div>
-                            <div className="bg-white w-full rounded-md h-[50%] flex items-center cursor-pointer p-4 text-4xl hover:bg-black hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105">
-                                <div className="absolute top-0 left-0 bg-black h-full w-2 rounded-l-md"></div>
-                                Angular <br /> Development
-                            </div>
-                        </div>
-                    </div>
+                    <Box className="details p-4">
+                        <h1>SAP Business One</h1>
+                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                            Experience streamlined operations and enhanced
+                            productivity with the SAP Business One Tool.
+                            Designed specifically for software companies, this
+                            comprehensive solution simplifies project
+                            management, financial management, and customer
+                            relationship management. From agile project tracking
+                            to real-time collaboration and customizable
+                            dashboards, our tool is tailored to meet your unique
+                            needs and propel your business forward. Choose SAP
+                            Business One Tool and streamline your software
+                            company operations today.
+                        </p>
+                        <Link to={'/sap-business-one'}>
+                            <button className="w-48 mt-8 relative py-2 px-8 text-black text-base font-bold  overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                                Learn More
+                            </button>
+                        </Link>
+                    </Box>
 
-                    {/* stack-2 */}
-                    <div className="flex p-4 gap-4">
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <MdOutlineAppSettingsAlt className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    Mobile App <br /> Development
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    Our team provides mobile application
-                                    consulting, design, development, support,
-                                    and evaluation services.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <TbBrandReactNative className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    React Native <br /> Development
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    Let’s build a cross-platform application
-                                    that seamlessly works on Android, iOS, and
-                                    web platforms.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <Box className="details p-4">
+                        <h1>
+                            Artificial Intelligence & <br /> Machine Learning
+                        </h1>
+                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                            Drive digital transformation with our next-gen AI,
+                            ML, and big data technologies. We build scalable
+                            AI/ML architectures for cloud stacks and develop
+                            custom algorithms through a research-based approach.
+                            Our cognitive automation capabilities automate
+                            workflows with high accuracy and efficiency. Virtu's
+                            intelligent bots are deployed in industries like
+                            healthcare and travel, leveraging AI, RPA, and NLP.
+                            Our solutions connect, collect, and analyze
+                            enterprise data, providing leaders with valuable
+                            insights. We deliver intelligent bots using
+                            platforms like Automation Anywhere and SAP
+                            Intelligent RPA. Virtu has a proven track record in
+                            developing bots for various activities, from
+                            notifications to order processing.
+                        </p>
+                        <Link to={'/artificial-intelligence-machine-learning'}>
+                            <button className="w-48 mt-8 relative py-2 px-8 text-black text-base font-bold  overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                                Learn More
+                            </button>
+                        </Link>
+                    </Box>
 
-                    {/* stack-3 */}
-                    <div className="flex p-4 gap-4">
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <SiSap className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    ERP SAP <br /> Services
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    Expert SAP consulting for implementation,
-                                    upgrades, best practices, and ROI.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <TbBrandReactNative className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    SAP <br /> Business One
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    Experience streamlined software company
-                                    operations with SAP Business One Tool.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <Box className="details p-4">
+                        <h1>Mobile Application Development</h1>
+                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                            The prevalence of smartphones in our daily lives has
+                            made them an essential tool. As a result, businesses
+                            need to prioritize mobile optimization to tap into
+                            the increasingly important mobile marketplace. At
+                            Virtu Tech, we specialize in mobile app development,
+                            catering to a range of platforms including iOS,
+                            Android, and Windows, with offerings such as mobile
+                            consulting, application security, and development
+                            and maintenance. Our talented team takes a
+                            comprehensive approach to ensure that we deliver
+                            stunning results on time. We prioritize aesthetics
+                            and functionality to reduce costs and improve
+                            efficiency. Additionally, our experience of over 8
+                            years and adherence to best practices help us
+                            support your business strategy by developing systems
+                            for increased performance. Don't miss out on the
+                            opportunities that the mobile marketplace presents.
+                            Get in touch with us today for all your mobile
+                            development needs and experience our excellence
+                            firsthand.
+                        </p>
+                        <Link to={'/mobile-development'}>
+                            <button className="w-48 mt-8 relative py-2 px-8 text-black text-base font-bold  overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                                Learn More
+                            </button>
+                        </Link>
+                    </Box>
 
-                    {/* stack-4 */}
-                    <div className="flex p-4 gap-4">
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <SiSap className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    Quality Assurance <br />& Test Automation
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    Virtu Tech offers end-to-end quality
-                                    assurance services exceeding industry
-                                    standards.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <TbBrandReactNative className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    Artificial Intelligence & Machine Learning
-                                </h1>
-                                <p className="mt-8 w-[90%] inter font-normal">
-                                    We deliver AI, ML, big data, cognitive
-                                    automation, and intelligent bot solutions
-                                    for digital transformation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <Box className="details p-4">
+                        <h1>
+                            Quality Assurance & <br /> Test Automation
+                        </h1>
+                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                            Virtu Tech offers end-to-end software quality
+                            assurance services that include requirements
+                            management, installation script validation, testing
+                            for user conditions, and bug tracking. Our
+                            experienced QA team assesses software functionality,
+                            load, stress, volume, regression, and performance
+                            profiling using top tools like Test Director,
+                            Quality Center, and Apache Jmeter. We offer Manual
+                            Testing, Automation Testing, Performance Testing,
+                            Mobile Testing, Dev Ops, and QA Platform
+                            Administration Services that exceed industry
+                            standards and optimize solutions for greater
+                            efficiency, reliability, and cost-effectiveness.
+                        </p>
+                        <Link to={'/quality-assurance-test-automation'}>
+                            <button className="w-48 mt-8 relative py-2 px-8 text-black text-base font-bold  overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                                Learn More
+                            </button>
+                        </Link>
+                    </Box>
 
-                    {/* stack-5 */}
-                    <div className="flex p-4 gap-4">
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <SiSap className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    Product Development
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    We create, implement, integrate, and
-                                    maintain custom software applications
-                                    tailored to your business needs.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="relative bg-white w-[450px] h-[400px] hover:bg-black cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 p-4 hover:text-white rounded-md">
-                            <div className="ml-4">
-                                {' '}
-                                <div className=" bg-black w-fit h-full p-2 rounded-[50%]">
-                                    {/* <TbBrandReactNative className="text-5xl text-white" /> */}
-                                </div>
-                                <h1 className="text-3xl lexend-bold mt-24">
-                                    DataBase Integration
-                                </h1>
-                                <p className="mt-[4.3rem] w-[90%] inter font-normal">
-                                    Oracle, MySQL, MongoDB integrated for
-                                    seamless data management across multiple
-                                    databases.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
+                    <Box className="details p-4">
+                        <h1>Product Development</h1>
+                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                            Virtu Tech Solutions specializes in creating,
+                            implementing, integrating, and maintaining custom
+                            software applications to meet your specific business
+                            needs. Our experienced team targets the precise
+                            requirements of your business, producing features
+                            that outperform generic software applications.
+                            Whether you need Product Development, Migration,
+                            Testing, or Maintenance, our Product Engineering
+                            teams can work as extensions of your engineering
+                            team or as independent units. We offer services in
+                            Product Planning, Technology Planning, Development &
+                            Testing, Maintenance and Support, and Product
+                            Re-engineering. Our expertise includes Open Source
+                            Tools & Frameworks, .NET Technologies, Java,
+                            SharePoint, Python, Ruby on Rails, PHP, Web
+                            Technologies, Agile Methodologies, and Continuous
+                            Integration & Delivery. We are passionate about
+                            writing good code that adds value to the end-user
+                            experience and strive for simplicity, flexibility,
+                            and excellence in our solutions.
+                        </p>
+                        <Link to={'/product-development'}>
+                            <button className="w-48 mt-8 relative py-2 px-8 text-black text-base font-bold  overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                                Learn More
+                            </button>
+                        </Link>
+                    </Box>
+                </Box>
+                <Box
+                    className="rightblock"
+                    sx={{
+                        width: '50%',
+                        height: '100vh',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                    }}
+                >
+                    <Box
+                        className="mt-[6rem] ml-20"
+                        sx={{
+                            width: '35vw',
+                            height: '35vw',
+                            borderRadius: '10px',
+                            position: 'relative',
+                            overflow: 'hidden',
+                            '& .photo': {
+                                position: 'absolute',
+                                width: '100%',
+                                height: '100%',
+                                '& img': {
+                                    height: '100%',
+                                    width: '100%',
+                                    borderRadius: '2px',
+                                },
+                            },
+                        }}
+                    >
+                        <Box className="photo">
+                            <img
+                                className="object-fit"
+                                src="https://duws858oznvmq.cloudfront.net/What_is_SAP_and_ERP_042feeda18.webp"
+                                alt="SAP ERP"
+                            />
+                        </Box>
+                        <Box className="photo">
+                            <img
+                                className="object-fit"
+                                src="/assets/images/sapbusinessone.jpeg"
+                                alt="img-2"
+                            />
+                        </Box>
+                        <Box className="photo">
+                            <img
+                                className="object-fit"
+                                src="https://urbeuniversity.edu/post_assets/Le9zsr8bQmv7gmZW40UXiVaPsGcpVwaY65mw28tU.webp"
+                                alt="AiMl"
+                            />
+                        </Box>
+                        <Box className="photo">
+                            <img
+                                className="object-fit"
+                                src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149065783.jpg"
+                                alt="mobilApplication"
+                            />
+                        </Box>
+                        <Box className="photo">
+                            <img
+                                className="object-fit"
+                                src="https://assets-global.website-files.com/5ea8776659423e1a1c9a7203/600783b8191cd55f8e86e1f6_quality-assurance-automation.jpg"
+                                alt="QA & testAutomation"
+                            />
+                        </Box>
+                        <Box className="photo">
+                            <img
+                                className="object-fit"
+                                src="https://t4.ftcdn.net/jpg/03/20/49/49/360_F_320494970_d7u0XrhKiD0KkWTPLf4egsw1jmoUuIZN.jpg"
+                                alt="productDevelopment"
+                            />
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+        </React.Fragment>
     );
-};
+}
 
-export default ServicesTwo;
+export default ServiceType;

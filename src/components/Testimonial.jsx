@@ -54,7 +54,7 @@ const Testimonial = () => {
 
     return (
         <div>
-            <section className="">
+            <section className="bg-[#111722]">
                 <div className="mx-auto  max-w-[1400px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-4 xl:py-24">
                     <div className=" grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-16">
                         <div className="max-w-xl p-2  text-start ltr:sm:text-left rtl:sm:text-right">

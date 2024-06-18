@@ -18,6 +18,12 @@ import Marquee from './components/Marquee';
 import Testimonial from './components/Testimonial';
 import ClientsPortfolio from './components/ClientsPortfolio';
 import Loader from './utils/Loader';
+import ArtificialIntelligence from './components/servicesTwo/ArtificialIntelligence';
+import QualityTesting from './components/servicesTwo/QualityTesting';
+import SAPBusinessOne from './components/servicesTwo/SAPBusinessOne';
+import ProductDevelopment from './components/servicesTwo/ProductDevelopment';
+import MobileDevelopment from './components/servicesTwo/MobileDevelopment';
+import ErpSap from './components/servicesTwo/ErpSap';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -73,6 +79,27 @@ const App = () => {
                             path="/agency-support"
                             element={<AgencySupport />}
                         />
+                        <Route
+                            path="/artificial-intelligence-machine-learning"
+                            element={<ArtificialIntelligence />}
+                        />
+                        <Route
+                            path="/quality-assurance-test-automation"
+                            element={<QualityTesting />}
+                        />
+                        <Route
+                            path="/sap-business-one"
+                            element={<SAPBusinessOne />}
+                        />
+                        <Route
+                            path="/product-development"
+                            element={<ProductDevelopment />}
+                        />
+                        <Route
+                            path="/mobile-development"
+                            element={<MobileDevelopment />}
+                        />
+                        <Route path="/erp-sap" element={<ErpSap />} />
                     </Routes>
                 </div>
             </Router>

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 const ClientsPortfolio = () => {
     return (
         <div>
-            <h1 className="uppercase text-3xl mt-4 mb-10 text-white text-center lexend-bold">
+            <h1 className="uppercase text-3xl mt-10 mb-10 text-white text-center lexend-bold">
                 Clients Portfolio
             </h1>
             <div className="p-4 flex items-center justify-center flex-wrap mb-8 gap-14">

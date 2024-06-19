@@ -7,8 +7,18 @@ const cardsData = [
     { end: 110, label: 'Mobile Apps', suffix: '+' },
     { end: 3, label: 'International Presence', suffix: '+' },
     { end: 14, label: 'Years of Experience', suffix: '+' },
-    { end: 540, label: 'Portal / ECommerce Websites', suffix: '+' },
-    { end: 70, label: 'Businesses in America & Europe', suffix: '%' },
+    {
+        end: 540,
+        labelTop: 'Portal/ECommerce',
+        labelBottom: 'Websites',
+        suffix: '+',
+    },
+    {
+        end: 70,
+        labelTop: 'Businesses in',
+        labelBottom: 'America & Europe',
+        suffix: '%',
+    },
 ];
 
 const CardComponent = () => {
@@ -18,7 +28,7 @@ const CardComponent = () => {
                 <motion.div
                     key={index}
                     className="outer"
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{ scale: 0.9 }}
                 >
                     <div className="dot"></div>
                     <div className="card">
@@ -31,7 +41,14 @@ const CardComponent = () => {
                             />
                             {card.suffix}
                         </div>
-                        <div className="text-[90%]">{card.label}</div>
+                        {card.label ? (
+                            <div className="text-[90%]">{card.label}</div>
+                        ) : (
+                            <div className="text-[90%]">
+                                <div>{card.labelTop}</div>
+                                <div>{card.labelBottom}</div>
+                            </div>
+                        )}
                         <div className="line topl"></div>
                         <div className="line leftl"></div>
                         <div className="line bottoml"></div>

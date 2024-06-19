@@ -1,9 +1,13 @@
-import { FaPhoneAlt } from 'react-icons/fa';
+import { useEffect } from 'react';
 import Footer from './Footer';
 import Navbar from './NavBar';
 import { MdOutlineLocationOn, MdOutlinePhone } from 'react-icons/md';
 
 const ContactUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
             <div>

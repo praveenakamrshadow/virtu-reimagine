@@ -7,11 +7,16 @@ import {
     Typography,
     Tooltip,
 } from '@material-tailwind/react';
+import { useEffect } from 'react';
 import { IoIosAppstore } from 'react-icons/io';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
 import { MdOutlineWeb } from 'react-icons/md';
 
 const References = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
             <Navbar />

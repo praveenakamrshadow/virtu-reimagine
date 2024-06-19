@@ -2,16 +2,51 @@ import Card from '../utils/Card';
 import { motion } from 'framer-motion';
 
 const Featured = () => {
+    const containerVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 1,
+                delay: 0.5,
+                ease: 'easeOut',
+            },
+        },
+    };
+
+    const textVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 1,
+                delay: 1,
+                ease: 'easeOut',
+            },
+        },
+    };
+
     return (
-        <div
+        <motion.div
             id="featured"
-            className="flex flex-col items-center h-[123vh] w-full bg-[#111722]"
+            className="flex flex-col items-center h-[full] w-full bg-[#111722]"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
         >
-            <h1 className="mt-10 lexend-normal text-xl text-center text-white">
+            <motion.h1
+                className="mt-10 lexend-normal text-xl text-center text-white"
+                variants={textVariants}
+            >
                 INTERNATIONAL IT GROUP AT THE CROSSROAD OF MOBILE, WEB AND
                 INFORMATION SYSTEMS CONVERGENCE
-            </h1>
-            <p className="inter-normal mt-5 text-center w-[60%] text-gray-400">
+            </motion.h1>
+            <motion.p
+                className="inter-normal mt-7 text-center w-[60%] text-gray-400"
+                variants={textVariants}
+            >
                 Virtu Tech Solutions is a trusted global innovator of IT,
                 Business services, and Software solution provider. We help
                 clients transform through consulting, industry solutions,
@@ -22,11 +57,11 @@ const Featured = () => {
                 reach with local client attention to serve them. We service our
                 clients in more than 60 countries through various delivery
                 models.
-            </p>
-            <motion.div className="cards mt-12">
+            </motion.p>
+            <motion.div className="cards mt-12" variants={textVariants}>
                 <Card />
             </motion.div>
-        </div>
+        </motion.div>
     );
 };
 

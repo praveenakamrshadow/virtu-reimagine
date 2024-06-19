@@ -16,10 +16,10 @@ const Services = () => {
     return (
         <>
             <div className="h-screen w-full bg-[#111722] text-white flex flex-col items-center justify-center gap-x-10 p-[2%] ">
-                <h1 className="text-3xl font-bold lexend-bold tracking-tight text-white sm:text-4xl mt-10">
+                <h1 className="text-3xl font-bold  lexend-bold tracking-tight text-white sm:text-4xl mt-20">
                     SERVICES WE OFFER
                 </h1>
-                <div className="flex flex-wrap justify-center mb-6 gap-x-10">
+                <div className="flex flex-wrap justify-center mb-24 gap-x-10">
                     <motion.div className="w-[40%] h-[40%] cursor-pointer mt-10 rounded-md overflow-hidden relative group">
                         <motion.img
                             src="/assets/images/mobile-solutions.jpeg"

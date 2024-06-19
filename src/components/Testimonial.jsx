@@ -161,7 +161,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Offshore Utilization:
                                                     Remarkable 240% Growth!
                                                 </h3>
@@ -233,7 +233,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Gratitude to VTS Team!
                                                 </h3>
                                                 <p className="mt-4 text-gray-600">
@@ -300,7 +300,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Confidence in Offshore
                                                     Team's Persistence!
                                                 </h3>
@@ -374,7 +374,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Exceptional Partnership with
                                                     VTS Interactive!
                                                 </h3>
@@ -446,7 +446,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Efficiency and Quality at
                                                     VTS!
                                                 </h3>
@@ -513,7 +513,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Successful Partnership: Two
                                                     Years Strong with VTS!
                                                 </h3>
@@ -592,7 +592,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Exceeding Expectations:
                                                     Virtutech Solutions
                                                     Commended!
@@ -659,7 +659,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Streamlining Development:
                                                     VTS Interactive Partnership!
                                                 </h3>
@@ -736,7 +736,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     First-Time Success:
                                                     Virtutech Solutions Deliver!
                                                 </h3>
@@ -806,7 +806,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     5 Years Strong: VTS
                                                     Interactive Excellence!
                                                 </h3>
@@ -879,7 +879,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     8 Years of Growth: Virtu
                                                     Tech Evolution!
                                                 </h3>
@@ -949,7 +949,7 @@ const Testimonial = () => {
                                                 </svg>
                                             </div>
                                             <div className="mt-4">
-                                                <h3 className="text-2xl font-bold text-blue-700 sm:text-3xl">
+                                                <h3 className="text-2xl lexend-bold text-blue-700 sm:text-3xl">
                                                     Highly Recommend VTS for
                                                     Excellence!
                                                 </h3>

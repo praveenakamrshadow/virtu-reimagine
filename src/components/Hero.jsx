@@ -1,7 +1,6 @@
 import { useRef } from 'react';
-import { FaPlay } from 'react-icons/fa';
+import { FaArrowRight, FaPlay } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import Button from '../utils/Button';
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -35,8 +34,14 @@ const Hero = () => {
                         we empower clients for success in the digital era.
                     </p>
                     <div className="flex w-full p-4 mt-10 gap-10">
-                        <div className="lexend-normal flex-shrink-0">
-                            <Button onClick={handleScrollToFeatured} />
+                        <div className="lexend-normal flex justify-center  gap-8 items-center">
+                            <button
+                                onClick={handleScrollToFeatured}
+                                className="w-44 lexend-bold ring-offset-background transition-colors delay-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-12 inline-flex items-center justify-center px-6 py-2 border-0 rounded-md text-sm font-medium text-white bg-gradient-to-l from-blue-500 to-purple-600 shadow-lg hover:from-purple-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            >
+                                Get Started
+                                <FaArrowRight className="ml-2" />
+                            </button>
                         </div>
                         <motion.button
                             whileHover={{ scale: 1.1 }}

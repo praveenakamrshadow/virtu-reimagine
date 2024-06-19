@@ -7,7 +7,7 @@ const Featured = () => {
             id="featured"
             className="flex flex-col items-center h-[123vh] w-full bg-[#111722]"
         >
-            <h1 className="mt-10  lexend-normal text-xl text-center text-white">
+            <h1 className="mt-10 lexend-normal text-xl text-center text-white">
                 INTERNATIONAL IT GROUP AT THE CROSSROAD OF MOBILE, WEB AND
                 INFORMATION SYSTEMS CONVERGENCE
             </h1>
@@ -23,7 +23,7 @@ const Featured = () => {
                 clients in more than 60 countries through various delivery
                 models.
             </p>
-            <motion.div className="cards mt-16">
+            <motion.div className="cards mt-12">
                 <Card />
             </motion.div>
         </div>

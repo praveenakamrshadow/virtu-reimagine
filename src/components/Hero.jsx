@@ -13,19 +13,19 @@ const Hero = () => {
         },
         {
             id: 'sap',
-            heading: 'Revolutionize Your Business With AI/ML',
-            subheading: 'Explore The Possibilities',
+            heading: 'Leverage SAP ERP services for success',
+            subheading: 'With Our Expertise',
         },
         {
             id: 'digital',
-            heading: 'Revolutionize Your Business With AI/ML',
-            subheading: 'Explore The Possibilities',
+            heading: 'Unlock Power of Digital Transformation',
+            subheading: 'with Digital Solutions',
         },
     ];
 
     const images = [
         '/assets/images/machineLearning.svg',
-        '/assets/images/ERPSAP.svg',
+        '/assets/images/SAP-Image.png',
         '/assets/images/digitalTransformation.svg',
     ];
 
@@ -88,7 +88,7 @@ const Hero = () => {
             <div className="flex">
                 <div className="p-16 h-screen w-screen flex flex-col items-center justify-center">
                     <div ref={heroRef} className="w-full">
-                        <div className="h-[200px] flex flex-col justify-center">
+                        <div className="h-[150px] flex flex-col justify-center">
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={slides[currentSlide].id}

@@ -26,7 +26,7 @@ const Footer = () => {
                             Development Services.
                         </p>
 
-                        <ul className="flex items-center space-x-4 mt-9">
+                        <ul className="flex items-center space-x-4 mt-5">
                             <li>
                                 <a
                                     href="https://www.facebook.com/virtu"
@@ -167,7 +167,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <hr className="mt-10 mb-5 border-gray-200" />
+                <hr className="mt-6 mb-5 border-gray-200" />
                 <p className="text-sm text-center text-gray-500">
                     © 2009 - 2024 Virtu Tech Solutions LLC. All Rights Reserved
                 </p>

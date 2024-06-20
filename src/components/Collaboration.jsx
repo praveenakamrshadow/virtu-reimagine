@@ -7,7 +7,7 @@ const Collaboration = () => {
             <hr className="border-white border-t-4 w-[15%]" />
             <a
                 href="mailto:info@virtutechsolutions.com"
-                className="transition duration-300 ease-in-out hover:text-blue-400"
+                className="transition duration-300 ease-in-out hover:text-[#4A6CF7]"
             >
                 <h1 className="text-3xl lexend-bold">
                     info@virtutechsolutions.com

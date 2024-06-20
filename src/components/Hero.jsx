@@ -25,7 +25,7 @@ const Hero = () => {
 
     const images = [
         '/assets/images/machineLearning.svg',
-        '/assets/images/SAP-Image.png',
+        '/assets/images/SAP-Image.svg',
         '/assets/images/digitalTransformation.svg',
     ];
 

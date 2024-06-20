@@ -53,7 +53,7 @@ const Hero = () => {
             y: 0,
             transition: {
                 duration: 0.8,
-                ease: 'easeOut',
+                ease: 'easeInOut',
             },
         },
     };
@@ -66,7 +66,7 @@ const Hero = () => {
             transition: {
                 duration: 0.8,
                 delay: 0.4,
-                ease: 'easeOut',
+                ease: 'easeInOut',
             },
         },
     };
@@ -84,7 +84,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="dark:bg-gray-900 text-white dark:text-white">
+        <div className="dark:bg-gray-900 text-white dark:text-white overflow-x-hidden">
             <div className="flex">
                 <div className="p-16 h-screen w-screen flex flex-col items-center justify-center">
                     <div ref={heroRef} className="w-full">

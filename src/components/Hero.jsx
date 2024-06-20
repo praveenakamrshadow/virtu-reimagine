@@ -13,13 +13,13 @@ const Hero = () => {
         },
         {
             id: 'sap',
-            heading: 'Unlock The Power Of ERP SAP',
-            subheading: 'With Expertise',
+            heading: 'Revolutionize Your Business With AI/ML',
+            subheading: 'Explore The Possibilities',
         },
         {
             id: 'digital',
-            heading: 'Digital Transformation',
-            subheading: 'Creating Value With The Digital Solutions',
+            heading: 'Revolutionize Your Business With AI/ML',
+            subheading: 'Explore The Possibilities',
         },
     ];
 
@@ -78,7 +78,7 @@ const Hero = () => {
             scale: 1,
             transition: {
                 duration: 1,
-                ease: 'easeOut',
+                ease: 'easeInOut',
             },
         },
     };
@@ -88,27 +88,28 @@ const Hero = () => {
             <div className="flex">
                 <div className="p-16 h-screen w-screen flex flex-col items-center justify-center">
                     <div ref={heroRef} className="w-full">
-                        <div className="h-[200px] flex flex-col justify-center ">
-                            <AnimatePresence initial={false}>
-                                <motion.h1
-                                    key={`image-${currentSlide}`}
-                                    className="text-[2rem] lexend-bold text-start"
+                        <div className="h-[200px] flex flex-col justify-center">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={slides[currentSlide].id}
                                     initial="hidden"
                                     animate="visible"
                                     exit="hidden"
                                     variants={headingVariants}
                                 >
-                                    {slides[currentSlide].heading}
-                                    <motion.span
-                                        className="block text-3xl text-end"
-                                        initial="hidden"
-                                        animate="visible"
-                                        exit="hidden"
-                                        variants={subheadingVariants}
-                                    >
-                                        {slides[currentSlide].subheading}
-                                    </motion.span>
-                                </motion.h1>
+                                    <h1 className="text-[2rem] lexend-bold text-start">
+                                        {slides[currentSlide].heading}
+                                        <motion.span
+                                            className="block text-3xl text-end"
+                                            initial="hidden"
+                                            animate="visible"
+                                            exit="hidden"
+                                            variants={subheadingVariants}
+                                        >
+                                            {slides[currentSlide].subheading}
+                                        </motion.span>
+                                    </h1>
+                                </motion.div>
                             </AnimatePresence>
                         </div>
                     </div>
@@ -133,14 +134,15 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center h-screen w-screen p-8">
-                    <AnimatePresence>
+                    <AnimatePresence mode="wait">
                         <motion.img
-                            key={`image-${currentSlide}`}
+                            key={images[currentSlide]}
                             src={images[currentSlide]}
                             alt="image"
                             className="w-[80%]"
                             initial="hidden"
                             animate="visible"
+                            exit="hidden"
                             variants={imageVariants}
                         />
                     </AnimatePresence>

@@ -124,23 +124,52 @@ const Navbar = () => {
                                     >
                                         Technologies
                                     </Link>
-                                    <Link
-                                        to="/capabilities-2"
-                                        className="flex items-center justify-between px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                    <button
+                                        onClick={() => toggleDropdown('erp')}
+                                        className="w-full text-left px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
                                     >
                                         ERP
-                                        <MdKeyboardArrowRight />
-                                    </Link>
+                                        {openDropdown === 'erp' ? (
+                                            <IoIosArrowUp className="ml-1" />
+                                        ) : (
+                                            <IoIosArrowDown className="ml-1" />
+                                        )}
+                                    </button>
+                                    <AnimatePresence>
+                                        {openDropdown === 'erp' && (
+                                            <motion.div
+                                                initial="hidden"
+                                                animate="visible"
+                                                exit="hidden"
+                                                variants={dropdownVariants}
+                                                className="bg-[#1E2432] rounded-md py-2 mt-1"
+                                            >
+                                                <Link
+                                                    to="/erp-module1"
+                                                    className="block px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                                >
+                                                    ERP Module 1
+                                                </Link>
+                                                <Link
+                                                    to="/erp-module2"
+                                                    className="block px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                                >
+                                                    ERP Module 2
+                                                </Link>
+                                                {/* Add more ERP modules as needed */}
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
                                     <Link
-                                        to="/capabilities-2"
-                                        className="flex items-center justify-between  px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                        to="/digital-transformation"
+                                        className="flex items-center justify-between px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
                                     >
                                         Digital Transformation
                                         <MdKeyboardArrowRight />
                                     </Link>
                                     <Link
-                                        to="/capabilities-2"
-                                        className="flex items-center justify-between  px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
+                                        to="/managed-services"
+                                        className="flex items-center justify-between px-4 py-2 transition-all delay-100 text-gray-500 hover:text-white"
                                     >
                                         Managed Services
                                         <MdKeyboardArrowRight />

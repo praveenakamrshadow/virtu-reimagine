@@ -1,9 +1,71 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from './Footer';
 import Navbar from './NavBar';
 import { MdOutlineLocationOn, MdOutlinePhone } from 'react-icons/md';
 
 const ContactUs = () => {
+    const initialValue = {
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
+        website: '',
+    };
+    const [formValues, setFromValues] = useState(initialValue);
+    const [formErrors, setFromErrors] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
+
+    const handleChange = (e) => {
+        console.log(e.target);
+        const { name, value } = e.target;
+        setFromValues({ ...formValues, [name]: value });
+        console.log(formValues);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const errors = validate(formValues);
+        setFromErrors(errors);
+        setIsSubmit(true);
+
+        if (Object.keys(errors).length === 0) {
+            setShowSuccess(true);
+            setFromValues(initialValue);
+            setTimeout(() => setShowSuccess(false), 5000);
+        }
+    };
+
+    useEffect(() => {
+        if (Object.keys(formErrors).length === 0 && isSubmit) {
+            console.log(formValues);
+        }
+    }, [formErrors, isSubmit, formValues]);
+
+    const validate = (values) => {
+        const errors = {};
+        const regex =
+            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        if (!values.firstName) {
+            errors.firstName = 'FirstName is Required!';
+        }
+        if (!values.lastName) {
+            errors.lastName = 'LastName is Required!';
+        }
+        if (!values.email) {
+            errors.email = 'Email is Required!';
+        } else if (!regex.test(values.email)) {
+            errors.email = 'Invalid Email Format!';
+        }
+        if (!values.phone) {
+            errors.phone = 'Mobile Number is Required!';
+        }
+
+        return errors;
+    };
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -13,7 +75,7 @@ const ContactUs = () => {
             <div>
                 <Navbar />
                 <div>
-                    <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mb-28 mt-14 mx-auto max-w-4xl bg-white inter-normal rounded-md">
+                    <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mb-28 mt-6 mx-auto max-w-4xl bg-white light:bg-gray-600 inter-normal rounded-md">
                         <div>
                             <h1 className="text-black text-3xl lexend-bold font-extrabold">
                                 Let's Talk
@@ -183,48 +245,82 @@ const ContactUs = () => {
                             </ul>
                         </div>
 
-                        <form className="ml-auto space-y-4">
+                        <form
+                            onSubmit={handleSubmit}
+                            className="ml-auto space-y-4"
+                        >
                             <div className="flex gap-2">
-                                <input
-                                    required
-                                    type="text"
-                                    placeholder="First Name*"
-                                    className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent"
-                                />
-                                <input
-                                    required
-                                    type="text"
-                                    placeholder="Last Name*"
-                                    className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent"
-                                />
+                                <div className="block">
+                                    <input
+                                        type="text"
+                                        name="firstName"
+                                        value={formValues.firstName}
+                                        onChange={handleChange}
+                                        placeholder="First Name*"
+                                        className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent"
+                                    />
+
+                                    <p className="text-red-600">
+                                        {formErrors.firstName}
+                                    </p>
+                                </div>
+                                <div className="block">
+                                    <input
+                                        type="text"
+                                        name="lastName"
+                                        value={formValues.lastName}
+                                        onChange={handleChange}
+                                        placeholder="Last Name*"
+                                        className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent"
+                                    />
+                                    <p className="text-red-600">
+                                        {formErrors.lastName}
+                                    </p>
+                                </div>
                             </div>
                             <input
-                                required
                                 type="Email"
+                                name="email"
+                                value={formValues.email}
+                                onChange={handleChange}
                                 placeholder="Email*"
                                 className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent"
                             />
+                            <p className="text-red-600">{formErrors.email}</p>
                             <input
                                 type="Website"
+                                value={formValues.website}
+                                onChange={handleChange}
+                                name="website"
                                 placeholder="website"
                                 className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent"
                             />
                             <input
-                                type="tel"
+                                type="number"
+                                name="phone"
+                                value={formValues.phone}
+                                onChange={handleChange}
                                 placeholder="Phone Number"
                                 className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent"
                             />
+                            <p className="text-red-600">{formErrors.phone}</p>
                             <textarea
                                 placeholder="Message"
+                                name="message"
+                                value={formValues.message}
+                                onChange={handleChange}
                                 rows="6"
                                 className="w-full rounded-md px-4 bg-gray-100 text-gray-800 text-sm pt-3 outline-blue-500 focus:bg-transparent"
                             ></textarea>
-                            <button
-                                type="button"
-                                className="text-white lexend-medium bg-blue-500 hover:bg-blue-600 transition-all delay-100 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6"
-                            >
+                            <p className="text-red-600">{formErrors.message}</p>
+                            <button className="text-white lexend-medium bg-blue-500 hover:bg-blue-600 transition-all delay-100 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">
                                 Request Quote
                             </button>
+                            {showSuccess && (
+                                <div className="mt-4 p-4 bg-green-100 text-green-700 rounded-md text-center">
+                                    Request sent successfully!
+                                </div>
+                            )}
                         </form>
                     </div>
                 </div>

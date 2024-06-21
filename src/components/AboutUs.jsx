@@ -11,7 +11,7 @@ const AboutUs = () => {
         <div>
             <div>
                 <Navbar />
-                Data Goes Here
+                <div className="h-full w-full">hello</div>
                 <Footer />
             </div>
         </div>

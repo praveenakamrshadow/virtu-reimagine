@@ -250,35 +250,35 @@ function ServiceType() {
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="/assets/images/sapbusinessone.jpeg"
-                                alt="img-2"
+                                src="/public/assets/images/servicesTwo/SAP-Image.png"
+                                alt="SAP-BusinessOne"
                             />
                         </Box>
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="https://urbeuniversity.edu/post_assets/Le9zsr8bQmv7gmZW40UXiVaPsGcpVwaY65mw28tU.webp"
+                                src="/assets/images/servicesTwo/AI-Ml.png"
                                 alt="AiMl"
                             />
                         </Box>
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149065783.jpg"
+                                src="/public/assets/images/servicesTwo/MobileDev.png"
                                 alt="mobilApplication"
                             />
                         </Box>
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="https://assets-global.website-files.com/5ea8776659423e1a1c9a7203/600783b8191cd55f8e86e1f6_quality-assurance-automation.jpg"
+                                src="/public/assets/images/servicesTwo/Testing.png"
                                 alt="QA & testAutomation"
                             />
                         </Box>
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="https://t4.ftcdn.net/jpg/03/20/49/49/360_F_320494970_d7u0XrhKiD0KkWTPLf4egsw1jmoUuIZN.jpg"
+                                src="/public/assets/images/servicesTwo/Product-Development.png"
                                 alt="productDevelopment"
                             />
                         </Box>

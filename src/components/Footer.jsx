@@ -8,13 +8,13 @@ const Footer = () => {
     return (
         <div className="bg-[#111722] py-10 inter-normal sm:pt-16 lg:pt-12">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
-                    <div className="col-span-2 text-2xl md:col-span-3 lg:col-span-2 lg:pr-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+                    <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
                         <Link to={'/'}>
                             <img
                                 className="w-auto h-9"
                                 src="/assets/images/virtu-white.png"
-                                alt=""
+                                alt="Virtu Tech Solutions"
                             />
                         </Link>
 
@@ -31,8 +31,8 @@ const Footer = () => {
                                 <a
                                     href="https://www.facebook.com/virtu"
                                     target="_blank"
-                                    title=""
-                                    className="flex text-4xl  items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                                    title="Facebook"
+                                    className="flex text-2xl items-center justify-center text-white transition-all duration-200 bg-gray-900 rounded-full w-10 h-10 hover:bg-blue-600 focus:bg-blue-600"
                                 >
                                     <FaFacebookSquare />
                                 </a>
@@ -42,8 +42,8 @@ const Footer = () => {
                                 <a
                                     href="https://www.linkedin.com/company/virtu-tech-solutions/"
                                     target="_blank"
-                                    title=""
-                                    className="flex text-4xl items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                                    title="LinkedIn"
+                                    className="flex text-2xl items-center justify-center text-white transition-all duration-200 bg-gray-900 rounded-full w-10 h-10 hover:bg-blue-600 focus:bg-blue-600"
                                 >
                                     <FaLinkedin />
                                 </a>
@@ -52,7 +52,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="text-sm font-semibold tracking-widest font text-white uppercase">
+                        <p className="text-sm font-semibold tracking-widest text-white uppercase">
                             Company
                         </p>
 
@@ -60,54 +60,50 @@ const Footer = () => {
                             <li>
                                 <Link
                                     to="/about-us"
-                                    title=""
-                                    className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    title="About Us"
+                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
-                                    {' '}
-                                    About Us{' '}
+                                    About Us
                                 </Link>
                             </li>
 
                             <li>
                                 <Link
                                     to="/contact-us"
-                                    title=""
-                                    className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    title="Contact Us"
+                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
-                                    {' '}
-                                    Contact Us{' '}
+                                    Contact Us
                                 </Link>
                             </li>
 
                             <li>
                                 <Link
                                     to="/references"
-                                    title=""
-                                    className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    title="Works"
+                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
-                                    {' '}
-                                    Works{' '}
+                                    Works
                                 </Link>
                             </li>
 
                             <li>
                                 <Link
                                     to="/carriers"
-                                    title=""
-                                    className="flex text-base  transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    title="Career"
+                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
                                 >
-                                    {' '}
-                                    Career{' '}
+                                    Career
                                 </Link>
                             </li>
                         </ul>
                     </div>
 
                     <div className="w-72">
-                        <p className="text-sm font-semibold tracking-widest  text-white uppercase">
+                        <p className="text-sm font-semibold tracking-widest text-white uppercase">
                             Contact us - USA
                         </p>
-                        <ul className="mt-6 text-gray-500 space-y-4 ">
+                        <ul className="mt-6 text-gray-500 space-y-4">
                             <li className="gap-2 flex justify-start items-center">
                                 <ImOffice />
                                 Virtu Tech Solutions LLC.
@@ -133,11 +129,11 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className=" w-72 ml-32">
-                        <p className="text-sm font-semibold tracking-widest  text-white uppercase">
+                    <div className="w-72 sm:ml-32">
+                        <p className="text-sm font-semibold tracking-widest text-white uppercase">
                             Contact us - INDIA
                         </p>
-                        <ul className="mt-6 text-gray-500 space-y-4 ">
+                        <ul className="mt-6 text-gray-500 space-y-4">
                             <li className="gap-2 flex justify-start items-center">
                                 <ImOffice />
                                 Virtu Tech Solutions

@@ -12,8 +12,8 @@ const Footer = () => {
                     <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
                         <Link to={'/'}>
                             <img
-                                className="dark:bg-gray-700 dark:p-2 dark:rounded-md"
-                                src="/assets/images/virtu-white.png"
+                                className=""
+                                src="/assets/images/virtu-logo.png"
                                 alt="Virtu Tech Solutions"
                             />
                         </Link>

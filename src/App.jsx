@@ -24,6 +24,19 @@ import SAPBusinessOne from './components/servicesTwo/SAPBusinessOne';
 import ProductDevelopment from './components/servicesTwo/ProductDevelopment';
 import MobileDevelopment from './components/servicesTwo/MobileDevelopment';
 import ErpSap from './components/servicesTwo/ErpSap';
+import Manufacturing from './components/ERP/Manufacturing';
+import Construction from './components/ERP/Construction';
+import InventoryManagement from './components/ERP/InventoryManagement';
+import Pharmaceuticals from './components/ERP/Pharmaceuticals';
+import Education from './components/DigitalTransformation/Education';
+import EGovernance from './components/DigitalTransformation/EGovernance';
+import EnterpriseSolutions from './components/DigitalTransformation/EnterpriseSolutions';
+import Financial from './components/DigitalTransformation/Financial';
+import Healthcare from './components/DigitalTransformation/Healthcare';
+import Logistics from './components/DigitalTransformation/Logistics';
+import MediaPublishing from './components/DigitalTransformation/MediaPublishing';
+import TravelTourism from './components/DigitalTransformation/TravelTourism';
+import Retail from './components/DigitalTransformation/Retail';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -65,12 +78,14 @@ const App = () => {
                                 element={<Collaboration />}
                             />
                         </Route>
+                        {/* navBar */}
                         <Route path="/mobile-apps" element={<MobileApps />} />
                         <Route path="/references" element={<References />} />
                         <Route path="/associates" element={<Associates />} />
                         <Route path="/contact-us" element={<ContactUs />} />
                         <Route path="/about-us" element={<AboutUs />} />
                         <Route path="/carriers" element={<Carriers />} />
+                        {/* servicesTwo */}
                         <Route
                             path="/technologies"
                             element={<Technologies />}
@@ -100,6 +115,42 @@ const App = () => {
                             element={<MobileDevelopment />}
                         />
                         <Route path="/erp-sap" element={<ErpSap />} />
+                        {/* ERP */}
+                        <Route
+                            path="/manufacturing"
+                            element={<Manufacturing />}
+                        />
+                        <Route
+                            path="/construction"
+                            element={<Construction />}
+                        />
+                        <Route
+                            path="/inventory-management"
+                            element={<InventoryManagement />}
+                        />
+                        <Route
+                            path="/pharmaceuticals"
+                            element={<Pharmaceuticals />}
+                        />
+                        {/* DigitalTransformation */}
+                        <Route path="/healthcare" element={<Healthcare />} />
+                        <Route path="/education" element={<Education />} />
+                        <Route path="/eGovernance" element={<EGovernance />} />
+                        <Route
+                            path="/enterprise-solutions"
+                            element={<EnterpriseSolutions />}
+                        />
+                        <Route path="/financial" element={<Financial />} />
+                        <Route path="/logistics" element={<Logistics />} />
+                        <Route
+                            path="/media-publishing"
+                            element={<MediaPublishing />}
+                        />
+                        <Route
+                            path="/travel-tourism"
+                            element={<TravelTourism />}
+                        />
+                        <Route path="/retail" element={<Retail />} />
                     </Routes>
                 </div>
             </Router>

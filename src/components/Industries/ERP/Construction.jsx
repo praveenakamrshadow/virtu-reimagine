@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import Footer from '../Footer';
-import Navbar from '../NavBar';
+import Footer from '../../Footer';
+import Navbar from '../../NavBar';
 
 const Construction = () => {
     useEffect(() => {

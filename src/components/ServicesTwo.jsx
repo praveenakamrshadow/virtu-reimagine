@@ -31,13 +31,13 @@ function ServiceType() {
         return () => ctx.revert();
     }, []);
     return (
-        <React.Fragment>
-            <h1 className="text-3xl font-bold text-center lexend-bold tracking-tight text-white sm:text-4xl mt-10">
+        <div className="dark:bg-[#FEFAF6]">
+            <h1 className="text-3xl pt-10 dark:text-black font-bold text-center lexend-bold tracking-tight text-white sm:text-4xl">
                 DIVERSIFIED KNOW-HOW AND CUSTOMERS PROFILE
             </h1>
             <Box className="gallery lexend-bold" sx={{ display: 'flex' }}>
                 <Box
-                    className="left"
+                    className="left "
                     sx={{
                         width: '50%',
                         marginLeft: 'auto',
@@ -54,8 +54,8 @@ function ServiceType() {
                     }}
                 >
                     <Box className="details p-4">
-                        <h1>ERP SAP Services</h1>
-                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                        <h1 className="dark:text-black">ERP SAP Services</h1>
+                        <p className="text-sm text-gray-500 dark:text-gray-800 mt-6 inter font-normal">
                             Build modern intelligent enterprises with expert SAP
                             consulting. Our experienced team offers end-to-end
                             SAP consultancy, supporting implementation and
@@ -73,8 +73,8 @@ function ServiceType() {
                     </Box>
 
                     <Box className="details p-4">
-                        <h1>SAP Business One</h1>
-                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                        <h1 className="dark:text-black">SAP Business One</h1>
+                        <p className="text-sm text-gray-500 dark:text-gray-800 mt-6 inter font-normal">
                             Experience streamlined operations and enhanced
                             productivity with the SAP Business One Tool.
                             Designed specifically for software companies, this
@@ -95,10 +95,10 @@ function ServiceType() {
                     </Box>
 
                     <Box className="details p-4">
-                        <h1>
+                        <h1 className="dark:text-black">
                             Artificial Intelligence & <br /> Machine Learning
                         </h1>
-                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                        <p className="text-sm text-gray-500 dark:text-gray-800 mt-6 inter font-normal">
                             Drive digital transformation with our next-gen AI,
                             ML, and big data technologies. We build scalable
                             AI/ML architectures for cloud stacks and develop
@@ -108,7 +108,8 @@ function ServiceType() {
                             intelligent bots are deployed in industries like
                             healthcare and travel, leveraging AI, RPA, and NLP.
                             Our solutions connect, collect, and analyze
-                            enterprise data, providing leaders with valuable
+                            enterprise data, providing l
+                            className="dark:text-black"eaders with valuable
                             insights. We deliver intelligent bots using
                             platforms like Automation Anywhere and SAP
                             Intelligent RPA. Virtu has a proven track record in
@@ -123,8 +124,10 @@ function ServiceType() {
                     </Box>
 
                     <Box className="details p-4">
-                        <h1>Mobile Application Development</h1>
-                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                        <h1 className="dark:text-black">
+                            Mobile Application Development
+                        </h1>
+                        <p className="text-sm text-gray-500 dark:text-gray-800 mt-6 inter font-normal">
                             The prevalence of smartphones in our daily lives has
                             made them an essential tool. As a result, businesses
                             need to prioritize mobile optimization to tap into
@@ -154,10 +157,10 @@ function ServiceType() {
                     </Box>
 
                     <Box className="details p-4">
-                        <h1>
+                        <h1 className="dark:text-black">
                             Quality Assurance & <br /> Test Automation
                         </h1>
-                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                        <p className="text-sm text-gray-500 dark:text-gray-800 mt-6 inter font-normal">
                             Virtu Tech offers end-to-end software quality
                             assurance services that include requirements
                             management, installation script validation, testing
@@ -180,8 +183,8 @@ function ServiceType() {
                     </Box>
 
                     <Box className="details p-4">
-                        <h1>Product Development</h1>
-                        <p className="text-sm text-gray-500 mt-6 inter font-normal">
+                        <h1 className="dark:text-black">Product Development</h1>
+                        <p className="text-sm text-gray-500 dark:text-gray-800 mt-6 inter font-normal">
                             Virtu Tech Solutions specializes in creating,
                             implementing, integrating, and maintaining custom
                             software applications to meet your specific business
@@ -285,7 +288,7 @@ function ServiceType() {
                     </Box>
                 </Box>
             </Box>
-        </React.Fragment>
+        </div>
     );
 }
 

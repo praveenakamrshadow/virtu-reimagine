@@ -12,7 +12,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
-                setNavbarBg('bg-[#111722]');
+                setNavbarBg('bg-[#111722] dark:bg-[#F6F4EB]');
             } else {
                 setNavbarBg('bg-transparent');
             }
@@ -36,7 +36,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`navbar ${navbarBg} lexend-normal p-[1.4rem] sticky top-0 z-50 transition-colors duration-300`}
+            className={`navbar ${navbarBg} lexend-normal p-[1.4rem] sticky top-0 z-50 transition-colors duration-300 dark:bg-[#F6F4EB]`}
         >
             <div className="flex justify-between items-center">
                 {/* nav-logo */}
@@ -50,6 +50,7 @@ const Navbar = () => {
                         <img
                             src="../assets/images/virtu-white.png"
                             alt="virtu-logo"
+                            className="dark:bg-gray-800 dark:rounded-md dark:p-2"
                         />
                     </Link>
                 </div>
@@ -156,7 +157,6 @@ const Navbar = () => {
                                                 >
                                                     ERP Module 2
                                                 </Link>
-                                                {/* Add more ERP modules as needed */}
                                             </motion.div>
                                         )}
                                     </AnimatePresence>

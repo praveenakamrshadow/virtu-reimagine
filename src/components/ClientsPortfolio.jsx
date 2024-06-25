@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom';
 
 const ClientsPortfolio = () => {
     return (
-        <div>
-            <h1 className="uppercase text-3xl mt-10 mb-10 text-white text-center lexend-bold">
+        <div className="dark:bg-[#FEFAF6]">
+            <h1 className="uppercase text-3xl dark:mt-0 mt-10 mb-10 dark:text-black text-white text-center lexend-bold">
                 Clients Portfolio
             </h1>
             <div className="p-4 flex items-center justify-center flex-wrap mb-8 gap-14">
@@ -471,7 +471,7 @@ const ClientsPortfolio = () => {
                     </CardBody>
                 </Card>
             </div>
-            <div className="mb-8 flex items-center justify-center lexend-normal">
+            <div className="mb-8 dark:mb-0 flex items-center justify-center lexend-normal">
                 <Link to="/references">
                     <button className="w-44 lexend-bold ring-offset-background transition-colors delay-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-10 inline-flex items-center justify-center px-6 py-2 border-0 rounded-md text-sm font-medium text-white bg-gradient-to-l from-blue-500 to-purple-600 shadow-lg hover:from-purple-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         View More

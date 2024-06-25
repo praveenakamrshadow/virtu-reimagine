@@ -54,14 +54,14 @@ const Testimonial = () => {
 
     return (
         <div>
-            <section className="bg-[#111722]">
+            <section className="bg-[#111722] dark:bg-[#FEFAF6]">
                 <div className="mx-auto  max-w-[1400px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-4 xl:py-24">
                     <div className=" grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-16">
                         <div className="max-w-xl p-2  text-start ltr:sm:text-left rtl:sm:text-right">
-                            <h2 className="text-3xl font-bold lexend-bold tracking-tight text-white sm:text-4xl">
+                            <h2 className="text-3xl dark:text-black font-bold lexend-bold tracking-tight text-white sm:text-4xl">
                                 Client Testimonials
                             </h2>
-                            <p className="mt-4 text-gray-400">
+                            <p className="mt-4 text-gray-400 dark:text-gray-800">
                                 Discover what our valued clients have to say
                                 about their experiences partnering with us.
                                 Their testimonials reflect our commitment to
@@ -116,7 +116,7 @@ const Testimonial = () => {
                             <div ref={sliderRef} className="keen-slider">
                                 {/* slide 1 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -188,7 +188,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* Slide 2 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -255,7 +255,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* slide 3 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -329,7 +329,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* Slide 4*/}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722]  p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -401,7 +401,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* slide 5 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -468,7 +468,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* Slide 6 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -547,7 +547,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* slide 7 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -614,7 +614,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* Slide 8 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -691,7 +691,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* slide 9 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -761,7 +761,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* Slide 10 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -834,7 +834,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* slide 11 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -904,7 +904,7 @@ const Testimonial = () => {
                                 </div>
                                 {/* Slide 12 */}
                                 <div className="keen-slider__slide">
-                                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
+                                    <blockquote className="flex h-full flex-col justify-between bg-white dark:bg-[#111722] p-6 shadow-sm sm:p-8 lg:p-12 rounded-md">
                                         <div>
                                             <div className="flex gap-0.5 text-yellow-500">
                                                 <svg
@@ -981,7 +981,7 @@ const Testimonial = () => {
                             <button
                                 aria-label="Previous slide"
                                 ref={prevButtonRef}
-                                className="rounded-full border border-rose-600 p-3 text-blue-600 transition hover:bg-rose-600 hover:text-white"
+                                className="rounded-full border border-rose-600 p-3 text-blue-600 transition hover:bg-rose-600 hover:text-white dark:border-gray"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -1001,7 +1001,7 @@ const Testimonial = () => {
                             <button
                                 aria-label="Next slide"
                                 ref={nextButtonRef}
-                                className="rounded-full border border-rose-600 p-3 text-blue-600 transition hover:bg-rose-600 hover:text-white"
+                                className="rounded-full border border-rose-600 p-3 text-blue-600 transition hover:bg-rose-600 hover:text-white dark:border-black"
                             >
                                 <svg
                                     className="size-5 rtl:rotate-180"

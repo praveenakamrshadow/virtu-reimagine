@@ -31,20 +31,20 @@ const Featured = () => {
     return (
         <motion.div
             id="featured"
-            className="flex flex-col items-center h-[full] w-full bg-[#111722]"
+            className="flex flex-col dark:bg-[#FEFAF6] items-center h-[full] w-full bg-[#111722]"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
         >
             <motion.h1
-                className="mt-10 lexend-normal text-xl text-center text-white"
+                className="mt-10 lexend-bold dark:lexend-bold dark:text-black text-xl text-center text-white"
                 variants={textVariants}
             >
                 INTERNATIONAL IT GROUP AT THE CROSSROAD OF MOBILE, WEB AND
                 INFORMATION SYSTEMS CONVERGENCE
             </motion.h1>
             <motion.p
-                className="inter-normal mt-7 text-center w-[60%] text-gray-400"
+                className="inter-normal dark:text-gray-800 mt-7 text-center w-[60%] text-gray-400"
                 variants={textVariants}
             >
                 Virtu Tech Solutions is a trusted global innovator of IT,
@@ -58,7 +58,7 @@ const Featured = () => {
                 clients in more than 60 countries through various delivery
                 models.
             </motion.p>
-            <motion.div className="cards mt-12" variants={textVariants}>
+            <motion.div className="cards mt-12 mb-8" variants={textVariants}>
                 <Card />
             </motion.div>
         </motion.div>

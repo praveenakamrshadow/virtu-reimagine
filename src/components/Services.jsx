@@ -14,8 +14,8 @@ const Services = () => {
     };
 
     return (
-        <div className="h-full w-full bg-[#111722] text-white flex flex-col items-center p-[2%]">
-            <h1 className="text-3xl font-bold lexend-bold tracking-tight text-white sm:text-4xl mt-2 mb-2">
+        <div className="h-full dark:bg-[#FEFAF6] w-full bg-[#111722] text-white flex flex-col items-center p-[2%]">
+            <h1 className="text-3xl dark:text-black font-bold lexend-bold tracking-tight text-white sm:text-4xl mt-2 mb-2">
                 SERVICES WE OFFER
             </h1>
             <div className="flex flex-wrap justify-center gap-x-10">
@@ -70,7 +70,7 @@ const Services = () => {
                 </motion.div>
 
                 {/* Third Card */}
-                <motion.div className="w-[35rem] h-[18rem] cursor-pointer mb-10 mt-8 rounded-md overflow-hidden relative group">
+                <motion.div className="w-[35rem] h-[18rem] cursor-pointer mt-8 rounded-md overflow-hidden relative group">
                     <motion.img
                         src="/assets/images/cloud-solutions.png"
                         alt="Third card image"
@@ -95,7 +95,7 @@ const Services = () => {
                 </motion.div>
 
                 {/* Fourth Card */}
-                <motion.div className="w-[35rem] h-[18rem] mt-8  mb-10 cursor-pointer rounded-md overflow-hidden relative group">
+                <motion.div className="w-[35rem] h-[18rem] mt-8  cursor-pointer rounded-md overflow-hidden relative group">
                     <motion.img
                         src="/assets/images/data-analytics.png"
                         alt="Fourth card image"

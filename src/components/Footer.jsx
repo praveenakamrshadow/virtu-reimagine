@@ -6,19 +6,19 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className="bg-[#111722] py-10 inter-normal sm:pt-16 lg:pt-12">
+        <div className="bg-[#111722] dark:bg-[#F6F4EB] py-10 inter-normal sm:pt-16 lg:pt-12">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
                         <Link to={'/'}>
                             <img
-                                className="w-auto h-9"
+                                className="dark:bg-gray-700 dark:p-2 dark:rounded-md"
                                 src="/assets/images/virtu-white.png"
                                 alt="Virtu Tech Solutions"
                             />
                         </Link>
 
-                        <p className="text-base leading-relaxed text-gray-500 mt-7">
+                        <p className="text-base leading-relaxed text-gray-500 dark:text-black mt-7">
                             At Virtu Tech Solutions, we are a leading provider
                             of ERP-SAP Implementation and Support Services, Data
                             Science, AI/ML, Data Analytics, Data Visualization,
@@ -26,13 +26,14 @@ const Footer = () => {
                             Development Services.
                         </p>
 
+                        {/* social media */}
                         <ul className="flex items-center space-x-4 mt-5">
                             <li>
                                 <a
                                     href="https://www.facebook.com/virtu"
                                     target="_blank"
                                     title="Facebook"
-                                    className="flex text-2xl items-center justify-center text-white transition-all duration-200 bg-gray-900 rounded-full w-10 h-10 hover:bg-blue-600 focus:bg-blue-600"
+                                    className="flex text-2xl items-center justify-center text-white transition-all duration-200 bg-gray-900 dark:bg-gray-700 rounded-full w-10 h-10 hover:bg-blue-600 focus:bg-blue-600"
                                 >
                                     <FaFacebookSquare />
                                 </a>
@@ -43,7 +44,7 @@ const Footer = () => {
                                     href="https://www.linkedin.com/company/virtu-tech-solutions/"
                                     target="_blank"
                                     title="LinkedIn"
-                                    className="flex text-2xl items-center justify-center text-white transition-all duration-200 bg-gray-900 rounded-full w-10 h-10 hover:bg-blue-600 focus:bg-blue-600"
+                                    className="flex text-2xl items-center justify-center text-white transition-all duration-200 bg-gray-900 dark:bg-gray-700 rounded-full w-10 h-10 hover:bg-blue-600 focus:bg-blue-600"
                                 >
                                     <FaLinkedin />
                                 </a>
@@ -52,16 +53,16 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="text-sm font-semibold tracking-widest text-white uppercase">
+                        <p className="text-sm font-semibold tracking-widest text-white dark:text-black uppercase">
                             Company
                         </p>
 
-                        <ul className="mt-6 space-y-4 font-semibold text-gray-500">
+                        <ul className="mt-6 space-y-4 font-semibold text-gray-600 dark:text-gray-700">
                             <li>
                                 <Link
                                     to="/about-us"
                                     title="About Us"
-                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    className="flex text-base transition-all duration-200 hover:text-white dark:hover:text-black focus:text-blue-600"
                                 >
                                     About Us
                                 </Link>
@@ -71,7 +72,7 @@ const Footer = () => {
                                 <Link
                                     to="/contact-us"
                                     title="Contact Us"
-                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    className="flex text-base transition-all duration-200 hover:text-white dark:hover:text-black  focus:text-blue-600"
                                 >
                                     Contact Us
                                 </Link>
@@ -81,7 +82,7 @@ const Footer = () => {
                                 <Link
                                     to="/references"
                                     title="Works"
-                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    className="flex text-base transition-all duration-200 hover:text-white dark:hover:text-black  focus:text-blue-600"
                                 >
                                     Works
                                 </Link>
@@ -91,7 +92,7 @@ const Footer = () => {
                                 <Link
                                     to="/carriers"
                                     title="Career"
-                                    className="flex text-base transition-all duration-200 hover:text-white focus:text-blue-600"
+                                    className="flex text-base transition-all duration-200 hover:text-white dark:hover:text-black  focus:text-blue-600"
                                 >
                                     Career
                                 </Link>
@@ -100,10 +101,10 @@ const Footer = () => {
                     </div>
 
                     <div className="w-72">
-                        <p className="text-sm font-semibold tracking-widest text-white uppercase">
+                        <p className="text-sm font-semibold tracking-widest text-white dark:text-black uppercase">
                             Contact us - USA
                         </p>
-                        <ul className="mt-6 text-gray-500 space-y-4">
+                        <ul className="mt-6 dark:text-gray-800 text-gray-500 space-y-4">
                             <li className="gap-2 flex justify-start items-center">
                                 <ImOffice />
                                 Virtu Tech Solutions LLC.
@@ -120,7 +121,7 @@ const Footer = () => {
                             <li className="gap-2 flex justify-start items-center">
                                 <IoMail />
                                 <a
-                                    className="hover:text-white transition-all duration-100"
+                                    className="hover:text-white dark:hover:text-black transition-all duration-100"
                                     href="mailto:info@virtutechsolutions.com"
                                 >
                                     info@virtutechsolutions.com
@@ -130,10 +131,10 @@ const Footer = () => {
                     </div>
 
                     <div className="w-72 sm:ml-32">
-                        <p className="text-sm font-semibold tracking-widest text-white uppercase">
+                        <p className="text-sm dark:text-black font-semibold tracking-widest text-white uppercase">
                             Contact us - INDIA
                         </p>
-                        <ul className="mt-6 text-gray-500 space-y-4">
+                        <ul className="mt-6 text-gray-500 dark:text-gray-800 space-y-4">
                             <li className="gap-2 flex justify-start items-center">
                                 <ImOffice />
                                 Virtu Tech Solutions
@@ -154,7 +155,7 @@ const Footer = () => {
                             <li className="gap-2 flex justify-start items-center">
                                 <IoMail />
                                 <a
-                                    className="hover:text-white transition-all duration-100"
+                                    className="hover:text-white dark:hover:text-black transition-all duration-100"
                                     href="mailto:info@virtutechsolutions.com"
                                 >
                                     info@virtutechsolutions.com
@@ -163,8 +164,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <hr className="mt-6 mb-5 border-gray-200" />
-                <p className="text-sm text-center text-gray-500">
+                <hr className="mt-6 mb-5 dark:border-gray-800 border-gray-200" />
+                <p className="text-sm text-center text-gray-500 dark:text-gray-800">
                     © 2009 - 2024 Virtu Tech Solutions LLC. All Rights Reserved
                 </p>
             </div>

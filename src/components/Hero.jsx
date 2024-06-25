@@ -84,7 +84,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="dark:bg-gray-900 text-white dark:text-white overflow-x-hidden">
+        <div className="dark:bg-[#FEFAF6] dark:text-black text-white  overflow-x-hidden">
             <div className="flex">
                 <div className="p-16 h-screen w-screen flex flex-col items-center justify-center">
                     <div ref={heroRef} className="w-full">
@@ -113,7 +113,7 @@ const Hero = () => {
                             </AnimatePresence>
                         </div>
                     </div>
-                    <p className="text-gray-400 inter-normal mt-16 p-3">
+                    <p className="text-gray-400 dark:text-gray-800 inter-normal mt-16 p-3">
                         Virtu Tech Solutions is a global leader in IT, business
                         services, and software solutions. We specialize in
                         consulting, industry solutions, IT modernization, and

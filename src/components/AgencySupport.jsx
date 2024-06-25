@@ -8,13 +8,20 @@ const AgencySupport = () => {
     }, []);
 
     return (
-        <div>
+        <div className="dark:bg-[#FEFAF6]">
             <div>
                 <Navbar />
-                <div className="text-3xl lexend-bold text-white p-4 ml-4">
-                    Agency Support
+                <div className="relative w-full h-[20rem]">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUGMO8v1YxhmAmNfQ_3xg-LGZ8c3emfX6_A&s"
+                        className="w-full h-full top-0 object-cover absolute"
+                        alt=""
+                    />
+                    <h1 className="absolute top-40 left-[43rem] text-white text-4xl">
+                        AGENCY SUPPORT
+                    </h1>
                 </div>
-                <div className="text-white  mb-16 mt-16 ml-8 p-4 flex items-center text-start justify-center">
+                <div className="text-white dark:text-gray-800  mb-16 mt-16 ml-8 p-4 flex text-start gap-x-8 justify-center">
                     <div className="w-1/2 gap-2 p-2">
                         <div>
                             <p>
@@ -99,6 +106,11 @@ const AgencySupport = () => {
                             </p>
                         </div>
                     </div>
+                    <img
+                        src="https://img.freepik.com/free-vector/call-center-helpdesk-concept-with-support-symbols-isometric-vector-illustration_1284-69102.jpg?t=st=1719294359~exp=1719297959~hmac=7742bb708e225445f6c018be0e62c244b60ce7d6b99fae22803fc40d5ac0ec43&w=740"
+                        alt=""
+                        className="h-[35rem] w-[35rem] rounded-md object-fit"
+                    />
                 </div>
                 <Footer />
             </div>

@@ -106,7 +106,7 @@ const Marquee = () => {
     };
 
     return (
-        <div className="relative bg-white overflow-hidden p-12">
+        <div className="relative bg-white dark:bg-[#FEFAF6] overflow-hidden p-12">
             <h1 className="text-3xl font-bold lexend-bold tracking-tight text-gray-900 sm:text-4xl text-center mb-8">
                 Featured Clients
             </h1>

@@ -18,9 +18,9 @@ const References = () => {
     }, []);
 
     return (
-        <div>
+        <div className="dark:bg-[#FEFAF6]">
             <Navbar />
-            <h1 className="uppercase text-3xl mt-8  mb-10 text-white text-start ml-6 lexend-bold">
+            <h1 className="uppercase text-3xl mt-8  mb-10 text-white dark:text-black text-start ml-6 lexend-bold">
                 REFERENCES
             </h1>
             <div className="p-4 flex items-center justify-center flex-wrap mb-8 gap-14">

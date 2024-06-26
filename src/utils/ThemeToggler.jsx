@@ -6,13 +6,13 @@ const ThemeToggler = () => {
     const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
-        const isDarkMode = localStorage.getItem('darkMode') === 'false';
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
         setDarkMode(isDarkMode);
     }, []);
 
     useEffect(() => {
         document.documentElement.classList.toggle('dark', darkMode);
-        localStorage.setItem('darkMode', darkMode);
+        localStorage.setItem('darkMode', darkMode.toString());
     }, [darkMode]);
 
     const toggleDarkMode = () => {
@@ -43,11 +43,6 @@ const ThemeToggler = () => {
             initial="initial"
             animate="animate"
             variants={buttonVariants}
-            style={{
-                padding: '0.5rem 1rem',
-                borderRadius: '9999px',
-                transition: 'background-color 0.1s',
-            }}
         >
             <AnimatePresence mode="wait">
                 <motion.div
@@ -61,7 +56,7 @@ const ThemeToggler = () => {
                             width: '1.5rem',
                             height: '1.5rem',
                             transition: 'transform 0.2s',
-                            color: darkMode ? '#1F2937' : '#FFFFFF',
+                            color: darkMode ? '#000000' : '#fff',
                         }}
                     />
                 </motion.div>

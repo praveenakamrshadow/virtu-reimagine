@@ -97,7 +97,7 @@ const Healthcare = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/mother-child-visiting-doctor_1262-19839.jpg?t=st=1719298494~exp=1719302094~hmac=15214c008556e6bf6a6ad9f8522d392126bb4bf638fcc369b7d1aba8b8d13c49&w=900"
+                    src="/assets/images/industries/healthcare.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />

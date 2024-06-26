@@ -253,7 +253,7 @@ function ServiceType() {
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="/public/assets/images/servicesTwo/SAP-Image.png"
+                                src="/assets/images/servicesTwo/SAP-Image.png"
                                 alt="SAP-BusinessOne"
                             />
                         </Box>
@@ -267,21 +267,21 @@ function ServiceType() {
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="/public/assets/images/servicesTwo/MobileDev.png"
+                                src="/assets/images/servicesTwo/MobileDev.png"
                                 alt="mobilApplication"
                             />
                         </Box>
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="/public/assets/images/servicesTwo/Testing.png"
+                                src="/assets/images/servicesTwo/Testing.png"
                                 alt="QA & testAutomation"
                             />
                         </Box>
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="/public/assets/images/servicesTwo/Product-Development.png"
+                                src="/assets/images/servicesTwo/Product-Development.png"
                                 alt="productDevelopment"
                             />
                         </Box>

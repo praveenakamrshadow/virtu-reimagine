@@ -21,7 +21,7 @@ const TravelTourism = () => {
                 </h1>
             </div>
 
-            <div className="flex mt-10 px-32 gap-10">
+            <div className="flex items-center justify-center mt-10 px-32 gap-10">
                 <div>
                     <p className="text-gray-500 dark:text-gray-800 mt-5">
                         Mobile devices lend themselves to travel apps. Planes,
@@ -47,7 +47,7 @@ const TravelTourism = () => {
                     </ul>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/travel-concept-with-landmarks_1057-4873.jpg?t=st=1719305975~exp=1719309575~hmac=053f861befb5f00df3f783862a1a91d4757d28e113754bf49aff28240aac51ec&w=740"
+                    src="/assets/images/industries/travel.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] mb-5 mt-5 rounded-md object-fit"
                 />

@@ -16,7 +16,7 @@ const Logistics = () => {
                     className="w-full h-full top-0 object-cover absolute"
                     alt=""
                 />
-                <h1 className="absolute top-40 left-[45rem] text-white text-4xl">
+                <h1 className="absolute top-40 left-[42.5rem] text-white text-4xl">
                     LOGISTICS
                 </h1>
             </div>
@@ -110,7 +110,7 @@ const Logistics = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/hand-drawn-flat-design-international-trade_23-2149154534.jpg?t=st=1719299673~exp=1719303273~hmac=8c6d213e0e969752cb51f561d7f9c527db039e8ec834776f67ca15a6a83aeffe&w=996"
+                    src="/assets/images/industries/logistics.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />

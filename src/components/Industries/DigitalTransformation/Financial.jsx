@@ -64,7 +64,7 @@ const Financial = () => {
                     <h1 className="text-white text-md lexend-bold mt-5 dark:text-black">
                         The financial apps can be included
                     </h1>
-                    <ul className="list-disc list-inside text-gray-500 dark:text-gray-800 mt-5 space-y-4">
+                    <ul className="list-disc list-inside text-gray-500 dark:text-gray-800 mb-5 mt-5 space-y-4">
                         <li>Investment Portfolio</li>
                         <li>Market Idea</li>
                         <li>Stock Finders</li>
@@ -79,7 +79,7 @@ const Financial = () => {
                     </ul>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/people-using-mobile-bank-remittance-money_74855-6617.jpg?t=st=1719299514~exp=1719303114~hmac=42d163677a6cb966b456fd24264dc531edf2599c2b0c62d537c2e90696320054&w=996"
+                    src="/assets/images/industries/financial.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />

@@ -126,9 +126,9 @@ const Retail = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/ecommerce-campaign-concept-illustration_114360-8432.jpg?t=st=1719307090~exp=1719310690~hmac=f9d5cbc3b0e38cc61de5c296fb32c518e685eb252b1684254a70992269d26b7b&w=740"
+                    src="/assets/images/industries/retail.svg"
                     alt=""
-                    className="h-[35rem] w-[35rem] mb-5 mt-5 rounded-md object-fit"
+                    className="h-[35rem] w-[35rem] object-cover"
                 />
             </div>
             <Footer />

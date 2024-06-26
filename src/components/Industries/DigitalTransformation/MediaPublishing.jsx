@@ -21,7 +21,7 @@ const MediaPublishing = () => {
                 </h1>
             </div>
 
-            <div className="flex mt-10 px-32 gap-10">
+            <div className="flex items-center mt-5 px-32 gap-10">
                 <div>
                     <p className="text-gray-500 dark:text-gray-800 mt-5">
                         Apps are a great place to access a large amount of
@@ -50,9 +50,9 @@ const MediaPublishing = () => {
                     </ul>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/podcast-social-media-concept_23-2148642674.jpg?t=st=1719301572~exp=1719305172~hmac=22beb9c1c34106114cc2eeca28c4ca0181dd55748042f04ff61f6f443d5c18ce&w=996"
+                    src="/assets/images/industries/media.svg"
                     alt=""
-                    className="h-[35rem] w-[35rem] mb-5 mt-5 rounded-md object-fit"
+                    className="h-[35rem] w-[35rem] mb-5 mt-object-fit"
                 />
             </div>
             <Footer />

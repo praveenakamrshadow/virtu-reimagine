@@ -37,6 +37,13 @@ import Logistics from './components/Industries/DigitalTransformation/Logistics';
 import MediaPublishing from './components/Industries/DigitalTransformation/MediaPublishing';
 import TravelTourism from './components/Industries/DigitalTransformation/TravelTourism';
 import Retail from './components/Industries/DigitalTransformation/Retail';
+import DatabaseAdministration from './components/Capabilities/ManagedServices/DatabaseAdministration';
+import InfrastructureManagement from './components/Capabilities/ManagedServices/InfrastructureManagement';
+import WebPortalDevelopment from './components/Capabilities/DigitalTransformation/WebPortalDevelopment';
+import DigitalMarketing from './components/Capabilities/DigitalTransformation/DigitalMarketing';
+import Tableau from './components/Capabilities/DigitalTransformation/DataScience/Tableau';
+import PowerBI from './components/Capabilities/DigitalTransformation/DataScience/PowerBI';
+import DataAnalytics from './components/Capabilities/DigitalTransformation/DataScience/DataAnalytics';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -115,6 +122,7 @@ const App = () => {
                             element={<MobileDevelopment />}
                         />
                         <Route path="/erp-sap" element={<ErpSap />} />
+                        {/* industries */}
                         {/* ERP */}
                         <Route
                             path="/manufacturing"
@@ -151,6 +159,32 @@ const App = () => {
                             element={<TravelTourism />}
                         />
                         <Route path="/retail" element={<Retail />} />
+                        {/* capabilities */}
+                        {/* Managed Services */}
+                        <Route
+                            path="/database-administration"
+                            element={<DatabaseAdministration />}
+                        />
+                        <Route
+                            path="/infrastructure-management"
+                            element={<InfrastructureManagement />}
+                        />
+                        {/* Digital Transformation */}
+                        <Route
+                            path="/web-portal-development"
+                            element={<WebPortalDevelopment />}
+                        />
+                        <Route
+                            path="/digital-marketing"
+                            element={<DigitalMarketing />}
+                        />
+                        {/* Data Science */}
+                        <Route path="/tableau" element={<Tableau />} />
+                        <Route path="/powerBI" element={<PowerBI />} />
+                        <Route
+                            path="/data-analytics-visualization"
+                            element={<DataAnalytics />}
+                        />
                     </Routes>
                 </div>
             </Router>

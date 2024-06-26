@@ -21,7 +21,7 @@ const EnterpriseSolutions = () => {
                 </h1>
             </div>
 
-            <div className="flex mt-10 px-32 gap-10">
+            <div className="flex items-center mt-10 px-32 gap-10">
                 <div>
                     <p className="text-gray-500 dark:text-gray-800 mt-5">
                         Many of our clients are medium and large corporate who
@@ -48,9 +48,9 @@ const EnterpriseSolutions = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/hand-drawn-business-strategy-with-statistics_23-2149164273.jpg?t=st=1719305616~exp=1719309216~hmac=437d287f0c4ea22863ce362f2ae5156ca0f9781295337bf38f9814377c3439c3&w=826"
+                    src="/assets/images/industries/enterprise.svg"
                     alt=""
-                    className="h-[35rem] w-[35rem] mb-5 mt-5 rounded-md object-fit"
+                    className="h-[35rem] w-[35rem] mb-5 mt-5 object-fit"
                 />
             </div>
             <Footer />

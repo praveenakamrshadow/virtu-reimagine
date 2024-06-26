@@ -109,7 +109,7 @@ const Education = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?t=st=1719297937~exp=1719301537~hmac=35d65ad312aaac225cb1315713b28f6c0b6a230127e982550f4e3f029552d0ff&w=740"
+                    src="/assets/images/industries/education.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />

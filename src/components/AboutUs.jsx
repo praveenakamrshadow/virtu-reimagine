@@ -101,7 +101,7 @@ const AboutUs = () => {
                 {/* hero section */}
                 <div className="h-full w-full relative text-white">
                     <img
-                        src="/public/assets/images/AboutUsBanner.png"
+                        src="/assets/images/AboutUsBanner.png"
                         alt="AboutUsBanner"
                         className="w-screen h-screen object-fit"
                     />
@@ -130,7 +130,7 @@ const AboutUs = () => {
                     <div className="bg-[#141427]">
                         <div className="flex relative items-center justify-center">
                             <img
-                                src="/public/assets/images/mission-img.svg"
+                                src="/assets/images/mission-img.svg"
                                 alt="mission-img"
                                 className="opacity-50 mt-14"
                             />

@@ -119,7 +119,7 @@ const Construction = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/construction-truck-concept-illustration_114360-9697.jpg?t=st=1719296801~exp=1719300401~hmac=57188dd41ceaafa0db23fcf8de72e7d21ff83c0e2b06c8d8f0e7afb9afe1a784&w=740"
+                    src="/assets/images/industries/construction.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />

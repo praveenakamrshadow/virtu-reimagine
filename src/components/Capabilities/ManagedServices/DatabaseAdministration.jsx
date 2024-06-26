@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Footer from '../../Footer';
 import Navbar from '../../NavBar';
 
-const Pharmaceuticals = () => {
+const DatabaseAdministration = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -16,68 +16,88 @@ const Pharmaceuticals = () => {
                     className="w-full h-full top-0 object-cover absolute"
                     alt=""
                 />
-                <h1 className="absolute top-40 left-[40rem] text-white text-4xl">
-                    PHARMACEUTICALS
+                <h1 className="absolute top-40 left-[36rem] text-white text-4xl uppercase">
+                    Database Administration
                 </h1>
             </div>
 
             <div className="flex mt-10 px-32 gap-10">
                 <div>
                     <p className="text-gray-500 dark:text-gray-800 mt-5">
-                        At Virtu Tech Solutions, we offer a pre-packaged and
-                        comprehensive solution specifically designed to cater to
-                        the needs of the pharmaceutical industry. Our
-                        pharmaceutical ERP software covers all essential
-                        business processes effectively, providing a holistic
-                        solution for producing safe and cost-effective drugs.
-                        With our solution, you can automate, integrate, and
-                        streamline your complete supply chain operations.
+                        Virtu Tech Solutions is a pioneer and leader in the
+                        field of Data Infrastructure Management and is the only
+                        company to provide complete support for all major
+                        database platforms Oracle, UDB DB2, DB2 z/OS, Sybase,
+                        SQL Server, MySQL using the ONguard IM process. Virtu
+                        Tech Solutions is SAS 70 Type II compliant. The
+                        company’s international Data Operations Center is
+                        headquartered in Florida.
                     </p>
                     <h1 className="text-white text-md lexend-bold mt-5 dark:text-black">
-                        Real-time Information and Industry Insights
+                        Remote DBA
                     </h1>
                     <p className="text-gray-500 mt-5 mb-5 dark:text-gray-800">
-                        Our pharmaceutical ERP software provides real-time
-                        information and a holistic view of the industry,
-                        empowering you to make informed decisions proactively.
-                        In today’s competitive marketplace, staying ahead
-                        requires having the right data at your fingertips. Our
-                        solution offers real-time insights that support your
-                        business strategy and help you succeed in the
-                        pharmaceutical industry.
+                        Get reliable, 24×7 database administration services
+                        across all major database platforms without the expense
+                        or headache associated with managing and staffing your
+                        own data center. Virtu Tech Solutions is fully staffed
+                        with highly skilled DBA teams that are ready to assist
+                        you anytime, any day, weekend, or holiday.
                     </p>
                     <h1 className="text-white text-md lexend-bold mt-5 dark:text-black">
-                        Specialized Features for the Pharmaceutical Industry
+                        Remote DBA Benefits
                     </h1>
                     <p className="text-gray-500 mt-5 mb-5 dark:text-gray-800">
-                        Our pharmaceutical ERP software handles all the special
-                        manufacturing, distribution, and accounting needs
-                        specific to the pharmaceutical industry. Here are some
-                        key features of our solution:
+                        By layering dedicated DBAs on top of the CSA service,
+                        large organizations are able to:
                     </p>
+                    <ul className="list-disc list-inside text-gray-500 dark:text-gray-800 mb-5 mt-5 space-y-4">
+                        <li>
+                            Reduce costs by standardizing and optimizing routine
+                            administration tasks.
+                        </li>
+                        <li>
+                            Have a robust data operation with enhanced expertise
+                            and data performance
+                        </li>
+                    </ul>
                     <h1 className="text-white text-md lexend-bold mt-5 dark:text-black">
-                        Optimizing Cash Flow
+                        Remote DBA Projects
                     </h1>
                     <p className="text-gray-500 mt-5 mb-5 dark:text-gray-800">
-                        We understand the importance of optimizing cash flow in
-                        the pharmaceutical industry. Our solution offers a
-                        ‘What-if’ cost analysis feature that takes into account
-                        factors such as labor, losses, overheads, and more. By
-                        analyzing different scenarios, you can make informed
-                        decisions that maximize profitability and control costs
-                        effectively.
+                        Whether you use our Database Operations services or just
+                        need some one-time help with your data environment,
+                        Virtu Tech Solutions offers comprehensive database
+                        project services. Our focus on system DBA tasks provides
+                        you with the expertise you need to get these tasks
+                        completed on time and on budget. We’ll handle those
+                        time-consuming infrastructure projects so that you can
+                        manage and improve your business. Our most popular
+                        services include:
                     </p>
-                    <h1 className="text-white text-md lexend-bold mt-5 dark:text-black">
-                        Bi-directional Traceability
-                    </h1>
+                    <ul className="list-disc list-inside text-gray-500 dark:text-gray-800 mb-5 mt-5 space-y-4">
+                        <li>Database Upgrades</li>
+                        <li>Oracle Upgrades</li>
+                        <li>Database Patching</li>
+                        <li>Database Installations</li>
+                        <li>Data Analytics</li>
+                        <li>Performance Analysis</li>
+                        <li>Database Optimization</li>
+                        <li>Remote DBA Application</li>
+                    </ul>
                     <p className="text-gray-500 mt-5 mb-5 dark:text-gray-800">
-                        Ensuring end-to-end traceability is vital in the
-                        pharmaceutical industry. Our solution provides in-depth
-                        bi-directional traceability, enabling you to track
-                        products from raw materials to finished goods and vice
-                        versa. This traceability facilitates efficient audits
-                        and lot recall, ensuring compliance and customer safety.
+                        From small businesses to Fortune 1000 enterprises, Virtu
+                        Tech Solutions has the database administration services
+                        that meet your needs. We understand how mission-critical
+                        data is across industries. We manage critical data
+                        assets across the following industries
                     </p>
+                    <ul className="list-disc list-inside text-gray-500 dark:text-gray-800 mb-5 mt-5 space-y-4">
+                        <li>Manufacturing</li>
+                        <li>National Retail Chains</li>
+                        <li>Global Financial Services</li>
+                        <li>Healthcare Services</li>
+                    </ul>
                     <h1 className="text-white text-md lexend-bold mt-5 dark:text-black">
                         Support for Various Business Models
                     </h1>
@@ -144,7 +164,7 @@ const Pharmaceuticals = () => {
                     </p>
                 </div>
                 <img
-                    src="/assets/images/industries/pharma.svg"
+                    src="/assets/images/capabilities/database-administration.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
@@ -154,4 +174,4 @@ const Pharmaceuticals = () => {
     );
 };
 
-export default Pharmaceuticals;
+export default DatabaseAdministration;

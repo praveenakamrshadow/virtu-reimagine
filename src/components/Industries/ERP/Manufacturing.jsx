@@ -143,7 +143,7 @@ const Manufacturing = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/factory-workers-robotic-arm-removing-packages-from-conveyor-line-engineer-using-computer-operating-process-vector-illustration-business-production-machine-technology-concepts_74855-9859.jpg?t=st=1719295379~exp=1719298979~hmac=affc67affaea0b3709b8fdbd22a6d0c1d6d0368e573bc505d8ad820a48f1fbe9&w=1060"
+                    src="/assets/images/industries/manufacturing.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />

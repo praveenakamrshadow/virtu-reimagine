@@ -111,7 +111,7 @@ const EGovernance = () => {
                     </ul>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/open-banking-data-access-financial-services-mobile-payment-app-development-api-technology-web-developers-designing-banking-platforms_335657-2401.jpg?t=st=1719302396~exp=1719305996~hmac=d89b440f8314c5cf0e26c036d2db82fee469df6546f9e5d8e98abf15ae1d117f&w=740"
+                    src="/assets/images/industries/govt.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] mb-5 mt-5 rounded-md object-fit"
                 />

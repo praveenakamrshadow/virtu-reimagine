@@ -121,7 +121,7 @@ const InventoryManagement = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-vector/conveyor-belt-warehouse-concept-illustration_114360-22345.jpg?t=st=1719296090~exp=1719299690~hmac=2c866db5ac196602973b20356efdce555a8a1b09bcaeb811d82f0522de1be54b&w=996"
+                    src="/assets/images/industries/inventory.svg"
                     alt=""
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />

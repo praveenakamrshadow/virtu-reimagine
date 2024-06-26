@@ -28,7 +28,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/BidGo.jpg"
+                            src="/assets/images/ClientsPortfolio/BidGo.jpg"
                             alt="bidGo-img"
                             className="object-fit"
                         />
@@ -88,7 +88,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/smashinGas.png"
+                            src="/assets/images/ClientsPortfolio/smashinGas.png"
                             alt="smashinGas-img"
                             className="w-full object-fit h-48"
                         />
@@ -143,7 +143,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/transpetra.png"
+                            src="/assets/images/ClientsPortfolio/transpetra.png"
                             alt="transpetra-img"
                             className="w-full h-48 object-cover"
                         />
@@ -198,7 +198,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/GenzPay.png"
+                            src="/assets/images/ClientsPortfolio/GenzPay.png"
                             alt="genZPay"
                             className="w-full h-48 object-fit"
                         />
@@ -250,7 +250,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/apollo.jpg"
+                            src="/assets/images/ClientsPortfolio/apollo.jpg"
                             alt="apollo-expert"
                             className="w-full h-48 object-cover"
                         />
@@ -316,7 +316,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/fresh-direct.jpg"
+                            src="/assets/images/ClientsPortfolio/fresh-direct.jpg"
                             alt="freshDirect"
                             className="w-full object-fit h-48"
                         />
@@ -371,7 +371,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/irvine-company.png"
+                            src="/assets/images/ClientsPortfolio/irvine-company.png"
                             alt="irvine-company"
                             className="w-full  object-cover h-[10.5rem]"
                         />
@@ -426,7 +426,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/fine-foods.png"
+                            src="/assets/images/ClientsPortfolio/fine-foods.png"
                             alt="fine-foods"
                             className="w-full object-fit h-48"
                         />
@@ -482,7 +482,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/mealcon.png"
+                            src="/assets/images/ClientsPortfolio/mealcon.png"
                             alt="mealcon"
                             className="w-full object-fit h-48"
                         />
@@ -537,7 +537,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/cbk-mobile.jpg"
+                            src="/assets/images/ClientsPortfolio/cbk-mobile.jpg"
                             alt="cbk-mobile"
                             className="w-full h-40 object-cover"
                         />
@@ -592,7 +592,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/centrocasas.jpg"
+                            src="/assets/images/ClientsPortfolio/centrocasas.jpg"
                             alt="centrocasas"
                             className="w-full h-48 object-fit"
                         />
@@ -647,7 +647,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/pacific-life.png"
+                            src="/assets/images/ClientsPortfolio/pacific-life.png"
                             alt="pacific-life"
                             className="w-full h-48 object-cover"
                         />
@@ -703,7 +703,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/thedollar.jpg"
+                            src="/assets/images/ClientsPortfolio/thedollar.jpg"
                             alt="theDollar"
                             className="w-full object-fit h-40"
                         />
@@ -758,7 +758,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/carlo-law.png"
+                            src="/assets/images/ClientsPortfolio/carlo-law.png"
                             alt="carlo-law"
                             className="w-full  object-cover h-[12rem]"
                         />
@@ -813,7 +813,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/bcqs.png"
+                            src="/assets/images/ClientsPortfolio/bcqs.png"
                             alt="BCQS"
                             className="w-full object-fit h-48"
                         />
@@ -865,7 +865,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/iway-dispatch.png"
+                            src="/assets/images/ClientsPortfolio/iway-dispatch.png"
                             alt="iway-dispatch"
                             className="object-cover"
                         />
@@ -920,7 +920,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/ezbarrel.png"
+                            src="/assets/images/ClientsPortfolio/ezbarrel.png"
                             alt="ezbarrel"
                             className="w-full object-fit h-48"
                         />
@@ -975,7 +975,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/bharat-matrimony.jpg"
+                            src="/assets/images/ClientsPortfolio/bharat-matrimony.jpg"
                             alt="bharat-matrimony"
                             className="w-full h-40 object-cover"
                         />
@@ -1030,7 +1030,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/island-car-rentals.png"
+                            src="/assets/images/ClientsPortfolio/island-car-rentals.png"
                             alt="island-car-rentals"
                             className="w-full h-40 object-fit"
                         />
@@ -1085,7 +1085,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/tcmrslaw.png"
+                            src="/assets/images/ClientsPortfolio/tcmrslaw.png"
                             alt="tcmslaw"
                             className="w-full h-48 object-cover"
                         />
@@ -1141,7 +1141,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/justrufs.png"
+                            src="/assets/images/ClientsPortfolio/justrufs.png"
                             alt="JUSTRUFS"
                             className="w-full object-fit h-48"
                         />
@@ -1196,7 +1196,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/cirrussystems.png"
+                            src="/assets/images/ClientsPortfolio/cirrussystems.png"
                             alt="Cirrus-systems"
                             className="w-full  object-cover h-[12rem]"
                         />
@@ -1251,7 +1251,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/campbellslegal.png"
+                            src="/assets/images/ClientsPortfolio/campbellslegal.png"
                             alt="campBellsLegal"
                             className="w-full object-fit h-40"
                         />
@@ -1306,7 +1306,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/assignmentpedia.png"
+                            src="/assets/images/ClientsPortfolio/assignmentpedia.png"
                             alt="AssignmentsPedia"
                             className="w-full h-48 object-cover"
                         />
@@ -1362,7 +1362,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/supergas.png"
+                            src="/assets/images/ClientsPortfolio/supergas.png"
                             alt="SuperGas"
                             className="w-full object-fit h-48"
                         />
@@ -1417,7 +1417,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/cishrp.png"
+                            src="/assets/images/ClientsPortfolio/cishrp.png"
                             alt="cishrp"
                             className="w-full  object-cover h-[12rem]"
                         />
@@ -1472,7 +1472,7 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="/public/assets/images/ClientsPortfolio/centrocasas.png"
+                            src="/assets/images/ClientsPortfolio/centrocasas.png"
                             alt="centrocasas"
                             className="w-full object-fit h-48"
                         />

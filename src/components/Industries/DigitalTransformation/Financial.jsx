@@ -80,7 +80,7 @@ const Financial = () => {
                 </div>
                 <img
                     src="/assets/images/industries/financial.svg"
-                    alt=""
+                    alt="Financial-Img"
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />
             </div>

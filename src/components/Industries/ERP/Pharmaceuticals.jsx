@@ -145,7 +145,7 @@ const Pharmaceuticals = () => {
                 </div>
                 <img
                     src="/assets/images/industries/pharma.svg"
-                    alt=""
+                    alt="Pharma-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

@@ -31,7 +31,7 @@ const Featured = () => {
     return (
         <motion.div
             id="featured"
-            className="flex flex-col dark:bg-[#FEFAF6] items-center h-[full] w-full bg-[#111722]"
+            className="flex flex-col dark:bg-[#F1F0E8] items-center h-[full] w-full bg-[#111722]"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

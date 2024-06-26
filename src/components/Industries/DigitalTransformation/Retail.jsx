@@ -127,7 +127,7 @@ const Retail = () => {
                 </div>
                 <img
                     src="/assets/images/industries/retail.svg"
-                    alt=""
+                    alt="Retail-Img"
                     className="h-[35rem] w-[35rem] object-cover"
                 />
             </div>

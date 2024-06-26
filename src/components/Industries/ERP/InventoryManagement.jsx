@@ -122,7 +122,7 @@ const InventoryManagement = () => {
                 </div>
                 <img
                     src="/assets/images/industries/inventory.svg"
-                    alt=""
+                    alt="Inventory-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

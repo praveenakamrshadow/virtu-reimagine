@@ -111,7 +111,7 @@ const QualityTesting = () => {
                 </div>
                 <img
                     src="https://img.freepik.com/free-vector/isometric-iso-certification-concept_23-2148688048.jpg?t=st=1719232050~exp=1719235650~hmac=f00d18c18f5da8a8b436c0c71f6ee828501c501307e13c7df38db2d1a8ea099d&w=996"
-                    alt=""
+                    alt="Quality-Testing-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

@@ -51,7 +51,7 @@ const MediaPublishing = () => {
                 </div>
                 <img
                     src="/assets/images/industries/media.svg"
-                    alt=""
+                    alt="Media-Img"
                     className="h-[35rem] w-[35rem] mb-5 mt-object-fit"
                 />
             </div>

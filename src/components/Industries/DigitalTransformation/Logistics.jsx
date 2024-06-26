@@ -111,7 +111,7 @@ const Logistics = () => {
                 </div>
                 <img
                     src="/assets/images/industries/logistics.svg"
-                    alt=""
+                    alt="Logistics-Img"
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />
             </div>

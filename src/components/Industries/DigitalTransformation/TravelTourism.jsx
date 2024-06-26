@@ -48,7 +48,7 @@ const TravelTourism = () => {
                 </div>
                 <img
                     src="/assets/images/industries/travel.svg"
-                    alt=""
+                    alt="Travel-Img"
                     className="h-[35rem] w-[35rem] mb-5 mt-5 rounded-md object-fit"
                 />
             </div>

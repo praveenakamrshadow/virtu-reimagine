@@ -146,7 +146,7 @@ const PowerBI = () => {
                 </div>
                 <img
                     src="/assets/images/digitalTransformation/powerBI.svg"
-                    alt=""
+                    alt="PowerBI-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

@@ -74,7 +74,7 @@ const ContactUs = () => {
         <div className="dark:bg-[#F6F5F2]">
             <Navbar />
             <div>
-                <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mb-28 mt-6 mx-auto max-w-4xl bg-white light:bg-gray-600 inter-normal rounded-md">
+                <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mb-28 mt-6 mx-auto max-w-4xl bg-white dark:shadow-lg inter-normal rounded-md">
                     <div>
                         <h1 className="text-black text-3xl lexend-bold font-extrabold">
                             Let's Talk

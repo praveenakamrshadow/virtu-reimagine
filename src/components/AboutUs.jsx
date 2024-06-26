@@ -151,7 +151,7 @@ const AboutUs = () => {
                             <div className="flex gap-4 items-center justify-center">
                                 <img
                                     src="https://d2e3cmtjkfw2a3.cloudfront.net/static/media/about/mission-1.svg"
-                                    alt=""
+                                    alt="About-Us-Img"
                                 />
                                 <div className="block">
                                     <h1 className="text-yellow-800 text-2xl lexend-bold">

@@ -147,7 +147,7 @@ const Tableau = () => {
                 </div>
                 <img
                     src="/assets/images/digitalTransformation/tableau.svg"
-                    alt=""
+                    alt="Tableau-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

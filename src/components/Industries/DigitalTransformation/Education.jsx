@@ -110,7 +110,7 @@ const Education = () => {
                 </div>
                 <img
                     src="/assets/images/industries/education.svg"
-                    alt=""
+                    alt="Education-Img"
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />
             </div>

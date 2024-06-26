@@ -85,7 +85,7 @@ const ArtificialIntelligence = () => {
                 </div>
                 <img
                     src="/public/assets/images/industries/AI.svg"
-                    alt=""
+                    alt="AI-Img"
                     className="h-[35rem] w-[35rem]"
                 />
             </div>

@@ -31,7 +31,7 @@ function ServiceType() {
         return () => ctx.revert();
     }, []);
     return (
-        <div className="dark:bg-[#FEFAF6]">
+        <div className="dark:bg-[#F1F0E8]">
             <h1 className="text-3xl pt-10 dark:text-black font-bold text-center lexend-bold tracking-tight text-white sm:text-4xl">
                 DIVERSIFIED KNOW-HOW AND CUSTOMERS PROFILE
             </h1>

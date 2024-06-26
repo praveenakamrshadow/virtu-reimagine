@@ -148,7 +148,7 @@ const DataAnalytics = () => {
                 </div>
                 <img
                     src="/assets/images/digitalTransformation/dataAnaytics.svg"
-                    alt=""
+                    alt="DataAnalytics-Img"
                     className="h-[35rem] w-[35rem]"
                 />
             </div>

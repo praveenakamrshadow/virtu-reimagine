@@ -131,7 +131,7 @@ const DigitalMarketing = () => {
                 </div>
                 <img
                     src="/assets/images/digitalTransformation/digitalMarketing.svg"
-                    alt=""
+                    alt="DigitalMarketing-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

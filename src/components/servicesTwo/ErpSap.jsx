@@ -178,7 +178,7 @@ const ErpSap = () => {
                 </div>
                 <img
                     src="https://img.freepik.com/free-vector/sap-system-application-product-concept-big-text-word-people-around-with-modern-isometric-style_82472-882.jpg?w=996&t=st=1719226693~exp=1719227293~hmac=8d474f67e1db1f2a8ccaef6478abcd3a7e969301f5214fb3d5d3cd8fe1d5dbf1"
-                    alt=""
+                    alt="ERP-SAP-Img"
                     className="h-[35rem] w-[35rem] rounded-md"
                 />
             </div>

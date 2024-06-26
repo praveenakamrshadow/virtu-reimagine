@@ -56,7 +56,7 @@ const WebPortalDevelopment = () => {
                 </div>
                 <img
                     src="/assets/images/digitalTransformation/webPortal.svg"
-                    alt=""
+                    alt="WebDev-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

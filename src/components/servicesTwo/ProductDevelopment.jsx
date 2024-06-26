@@ -95,7 +95,7 @@ const ProductDevelopment = () => {
                 </div>
                 <img
                     src="https://img.freepik.com/free-vector/tester-developer-work-with-laptop-tablet-cross-platform-bug-founding-bug-identification-testing-team-concept-white-background-bright-vibrant-violet-isolated-illustration_335657-315.jpg?t=st=1719293745~exp=1719297345~hmac=ef97ab8195a01bf3ee41bfa5f5a33c256bb46528dbc47123f5e814691d6c18ee&w=996"
-                    alt=""
+                    alt="Product-Development-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

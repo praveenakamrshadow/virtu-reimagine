@@ -144,7 +144,7 @@ const Manufacturing = () => {
                 </div>
                 <img
                     src="/assets/images/industries/manufacturing.svg"
-                    alt=""
+                    alt="Manufacturing-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

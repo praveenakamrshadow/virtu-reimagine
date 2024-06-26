@@ -49,7 +49,7 @@ const EnterpriseSolutions = () => {
                 </div>
                 <img
                     src="/assets/images/industries/enterprise.svg"
-                    alt=""
+                    alt="Enterprise-Img"
                     className="h-[35rem] w-[35rem] mb-5 mt-5 object-fit"
                 />
             </div>

@@ -108,7 +108,7 @@ const AgencySupport = () => {
                     </div>
                     <img
                         src="/assets/images/agencySupport.svg"
-                        alt=""
+                        alt="Agency-Support-Img"
                         className="h-[35rem] w-[35rem] rounded-md object-fit"
                     />
                 </div>

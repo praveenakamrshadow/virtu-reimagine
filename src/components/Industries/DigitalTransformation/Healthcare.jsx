@@ -98,7 +98,7 @@ const Healthcare = () => {
                 </div>
                 <img
                     src="/assets/images/industries/healthcare.svg"
-                    alt=""
+                    alt="Healthcare-Img"
                     className="h-[35rem] w-[35rem] mt-5 rounded-md object-fit"
                 />
             </div>

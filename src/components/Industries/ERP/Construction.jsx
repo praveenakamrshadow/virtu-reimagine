@@ -120,7 +120,7 @@ const Construction = () => {
                 </div>
                 <img
                     src="/assets/images/industries/construction.svg"
-                    alt=""
+                    alt="Construction-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

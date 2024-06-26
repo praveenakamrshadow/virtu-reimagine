@@ -399,7 +399,7 @@ const SAPBusinessOne = () => {
                 </div>
                 <img
                     src="https://img.freepik.com/free-vector/people-analyzing-growth-charts_23-2148866843.jpg?t=st=1719227442~exp=1719231042~hmac=ed53d07c4381a6f9cbfc42498d095a5e9e9203a714ef85859e61bcd2b9178e4a&w=996"
-                    alt=""
+                    alt="SAP-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

@@ -91,7 +91,7 @@ const MobileDevelopment = () => {
                 </div>
                 <img
                     src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169839.jpg?t=st=1719231198~exp=1719234798~hmac=8e8e66f2fcd84e21bbd27ce6405d2145c75dd46499ac56f74b770274e642efdc&w=996"
-                    alt=""
+                    alt="MobileDev-Img"
                     className="h-[35rem] w-[35rem] rounded-md object-fit"
                 />
             </div>

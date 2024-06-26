@@ -84,9 +84,9 @@ const ArtificialIntelligence = () => {
                     </p>
                 </div>
                 <img
-                    src="https://img.freepik.com/free-photo/ai-cloud-concept-with-robot-arm_23-2149739748.jpg?t=st=1719230679~exp=1719234279~hmac=863f4e540eb047d2b8d4aa6cfee51c1339da402b1fbc20d50bf2c8f60e4a8f33&w=900"
+                    src="/public/assets/images/industries/AI.svg"
                     alt=""
-                    className="h-[35rem] w-[35rem] rounded-md object-fit"
+                    className="h-[35rem] w-[35rem]"
                 />
             </div>
             <Footer />

@@ -48,8 +48,14 @@ const Navbar = () => {
                         }
                     >
                         <img
-                            src="../assets/images/virtu-logo.png"
-                            alt="virtu-logo"
+                            className="w-auto h-12 dark:hidden"
+                            src="/assets/images/virtu-white.png"
+                            alt="Virtu Tech Solutions"
+                        />
+                        <img
+                            className="w-auto h-12 hidden dark:block"
+                            src="/assets/images/virtu-logo.png"
+                            alt="Virtu Tech Solutions"
                         />
                     </Link>
                 </div>

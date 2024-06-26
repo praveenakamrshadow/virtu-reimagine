@@ -6,7 +6,7 @@ const ThemeToggler = () => {
     const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
-        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const isDarkMode = localStorage.getItem('darkMode') === 'false';
         setDarkMode(isDarkMode);
     }, []);
 
@@ -46,7 +46,7 @@ const ThemeToggler = () => {
             style={{
                 padding: '0.5rem 1rem',
                 borderRadius: '9999px',
-                transition: 'background-color 0.2s',
+                transition: 'background-color 0.1s',
             }}
         >
             <AnimatePresence mode="wait">

@@ -21,7 +21,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/bidgo-2.jpg"
+                            src="/assets/images/ClientsPortfolio/BidGo.jpg"
                             alt="ui/ux review check"
                             className="object-cover"
                         />
@@ -81,7 +81,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2023/02/1.png"
+                            src="/assets/images/ClientsPortfolio/smashinGas.png"
                             alt="ui/ux review check"
                             className="w-full object-fit h-48"
                         />
@@ -136,7 +136,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2023/02/3.png"
+                            src="/assets/images/ClientsPortfolio/transpetra.png"
                             alt="ui/ux review check"
                             className="w-full h-48 object-cover"
                         />
@@ -191,7 +191,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2023/02/4.png"
+                            src="/assets/images/ClientsPortfolio/GenzPay.png"
                             alt="ui/ux review check"
                             className="w-full h-48 object-fit"
                         />
@@ -243,7 +243,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/appolo.jpg"
+                            src="/assets/images/ClientsPortfolio/apollo.jpg"
                             alt="ui/ux review check"
                             className="w-full h-48 object-cover"
                         />
@@ -309,7 +309,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/fresh-direct-app-reference.jpg"
+                            src="/assets/images/ClientsPortfolio/fresh-direct.jpg"
                             alt="ui/ux review check"
                             className="w-full object-fit h-48"
                         />
@@ -350,7 +350,7 @@ const ClientsPortfolio = () => {
                             <Tooltip content="AppStore">
                                 <span className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70 text-lg">
                                     <a
-                                        href="https://www.irvinecompanyapartments.com/"
+                                        href="https://apps.apple.com/us/app/freshdirect-grocery-delivery/id346631494"
                                         target="_blank"
                                     >
                                         <IoIosAppstore />
@@ -364,7 +364,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/irvine-company-2.png"
+                            src="/assets/images/ClientsPortfolio/irvine-company.png"
                             alt="ui/ux review check"
                             className="w-full  object-cover h-[10.5rem]"
                         />
@@ -419,7 +419,7 @@ const ClientsPortfolio = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/fine-foods-2.png"
+                            src="/assets/images/ClientsPortfolio/fine-foods.png"
                             alt="ui/ux review check"
                             className="w-full object-fit h-48"
                         />

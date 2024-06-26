@@ -28,9 +28,9 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/bidgo-2.jpg"
-                            alt="ui/ux review check"
-                            className="object-cover"
+                            src="/public/assets/images/ClientsPortfolio/BidGo.jpg"
+                            alt="bidGo-img"
+                            className="object-fit"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
                     </CardHeader>
@@ -88,8 +88,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2023/02/1.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/smashinGas.png"
+                            alt="smashinGas-img"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -143,8 +143,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2023/02/3.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/transpetra.png"
+                            alt="transpetra-img"
                             className="w-full h-48 object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -198,8 +198,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2023/02/4.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/GenzPay.png"
+                            alt="genZPay"
                             className="w-full h-48 object-fit"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -250,8 +250,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/appolo.jpg"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/apollo.jpg"
+                            alt="apollo-expert"
                             className="w-full h-48 object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -316,8 +316,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/fresh-direct-app-reference.jpg"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/fresh-direct.jpg"
+                            alt="freshDirect"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -371,8 +371,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/irvine-company-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/irvine-company.png"
+                            alt="irvine-company"
                             className="w-full  object-cover h-[10.5rem]"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -426,8 +426,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/fine-foods-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/fine-foods.png"
+                            alt="fine-foods"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -482,8 +482,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2023/02/5.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/mealcon.png"
+                            alt="mealcon"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -537,8 +537,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/cbk-mobile.jpg"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/cbk-mobile.jpg"
+                            alt="cbk-mobile"
                             className="w-full h-40 object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -592,8 +592,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/centrocasas.jpg"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/centrocasas.jpg"
+                            alt="centrocasas"
                             className="w-full h-48 object-fit"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -647,8 +647,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/pacific-life-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/pacific-life.png"
+                            alt="pacific-life"
                             className="w-full h-48 object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -703,8 +703,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/thedollar.jpg"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/thedollar.jpg"
+                            alt="theDollar"
                             className="w-full object-fit h-40"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -758,8 +758,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/carlo-laws-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/carlo-law.png"
+                            alt="carlo-law"
                             className="w-full  object-cover h-[12rem]"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -813,8 +813,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/bcds-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/bcqs.png"
+                            alt="BCQS"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -865,8 +865,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/iway-dispatch-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/iway-dispatch.png"
+                            alt="iway-dispatch"
                             className="object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -920,8 +920,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/ezbarrel-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/ezbarrel.png"
+                            alt="ezbarrel"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -975,8 +975,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/bharat-matrimony-app-reference.jpg"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/bharat-matrimony.jpg"
+                            alt="bharat-matrimony"
                             className="w-full h-40 object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1030,8 +1030,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/island-car-rentals-2.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/island-car-rentals.png"
+                            alt="island-car-rentals"
                             className="w-full h-40 object-fit"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1085,8 +1085,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/tcmrslaw.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/tcmrslaw.png"
+                            alt="tcmslaw"
                             className="w-full h-48 object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1141,8 +1141,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/justrufs.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/justrufs.png"
+                            alt="JUSTRUFS"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1196,8 +1196,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/cirrussystems.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/cirrussystems.png"
+                            alt="Cirrus-systems"
                             className="w-full  object-cover h-[12rem]"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1251,8 +1251,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/campbellslegal.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/campbellslegal.png"
+                            alt="campBellsLegal"
                             className="w-full object-fit h-40"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1306,8 +1306,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/assignmentpedia.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/assignmentpedia.png"
+                            alt="AssignmentsPedia"
                             className="w-full h-48 object-cover"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1362,8 +1362,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/supergas.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/supergas.png"
+                            alt="SuperGas"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1417,8 +1417,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/cishrp.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/cishrp.png"
+                            alt="cishrp"
                             className="w-full  object-cover h-[12rem]"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -1472,8 +1472,8 @@ const References = () => {
                 <Card className="w-full max-w-[18rem] shadow-lg cursor-pointer">
                     <CardHeader floated={false} color="blue-gray">
                         <img
-                            src="https://www.virtutechsolutions.com/wp-content/uploads/2017/02/centrocasas.png"
-                            alt="ui/ux review check"
+                            src="/public/assets/images/ClientsPortfolio/centrocasas.png"
+                            alt="centrocasas"
                             className="w-full object-fit h-48"
                         />
                         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />

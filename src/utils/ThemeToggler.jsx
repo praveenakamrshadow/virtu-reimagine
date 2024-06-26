@@ -43,6 +43,17 @@ const ThemeToggler = () => {
             initial="initial"
             animate="animate"
             variants={buttonVariants}
+            aria-label={
+                darkMode ? 'Switch to light mode' : 'Switch to dark mode'
+            }
+            style={{
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}
         >
             <AnimatePresence mode="wait">
                 <motion.div
@@ -50,6 +61,7 @@ const ThemeToggler = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
+                    aria-hidden="true"
                 >
                     <Icon
                         style={{
@@ -61,6 +73,9 @@ const ThemeToggler = () => {
                     />
                 </motion.div>
             </AnimatePresence>
+            <span className="sr-only">
+                {darkMode ? 'Dark mode enabled' : 'Light mode enabled'}
+            </span>
         </motion.button>
     );
 };

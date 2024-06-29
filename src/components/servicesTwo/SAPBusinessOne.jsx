@@ -16,7 +16,7 @@ const SAPBusinessOne = () => {
                     alt="sap-business-one-Banner"
                 />
                 <div className="absolute inset-0 bg-black opacity-75"></div>
-                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center px-4">
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center px-4 lexend-bold">
                     SAP BUSINESS ONE
                 </h1>
             </div>

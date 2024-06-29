@@ -17,7 +17,7 @@ const MobileDevelopment = () => {
                     alt="Mobile-Development-Banner"
                 />
                 <div className="absolute inset-0 bg-black opacity-75"></div>
-                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lexend-bold">
                     MOBILE APPLICATION DEVELOPMENT
                 </h1>
             </div>

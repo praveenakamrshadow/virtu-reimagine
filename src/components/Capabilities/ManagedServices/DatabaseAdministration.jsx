@@ -17,7 +17,7 @@ const DatabaseAdministration = () => {
                     alt="database-administration-banner"
                 />
                 <div className="absolute inset-0 bg-black opacity-75"></div>
-                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl">
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl lexend-bold">
                     DATABASE ADMINISTRATION
                 </h1>
             </div>

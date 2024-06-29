@@ -246,7 +246,7 @@ function ServiceType() {
                         <Box className="photo">
                             <img
                                 className="object-fit"
-                                src="https://duws858oznvmq.cloudfront.net/What_is_SAP_and_ERP_042feeda18.webp"
+                                src="/assets/images/servicesTwo/ERP-SAP.jpg"
                                 alt="SAP ERP"
                             />
                         </Box>

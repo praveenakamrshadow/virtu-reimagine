@@ -12,11 +12,12 @@ const InfrastructureManagement = () => {
             <Navbar />
             <div className="relative w-full h-[20rem]">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUGMO8v1YxhmAmNfQ_3xg-LGZ8c3emfX6_A&s"
-                    className="w-full h-full top-0 object-cover absolute"
-                    alt=""
+                    src="/assets/images/capabilities/infrastructure-management-banner.jpg"
+                    className="w-full h-full top-0 object-cover object-top absolute"
+                    alt="infrastructure-management-banner"
                 />
-                <h1 className="absolute top-40 left-[28.5rem] text-white text-4xl uppercase">
+                <div className="absolute inset-0 bg-black opacity-75"></div>
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl">
                     INFRASTRUCTURE MANAGEMENT
                 </h1>
             </div>

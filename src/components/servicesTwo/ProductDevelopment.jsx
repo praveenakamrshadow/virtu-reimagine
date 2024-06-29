@@ -12,12 +12,13 @@ const ProductDevelopment = () => {
             <Navbar />
             <div className="relative w-full h-[20rem]">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUGMO8v1YxhmAmNfQ_3xg-LGZ8c3emfX6_A&s"
+                    src="/public/assets/images/servicesTWO/product-development-banner.jpg"
                     className="w-full h-full top-0 object-cover absolute"
-                    alt=""
+                    alt="product-development-Banner"
                 />
-                <h1 className="absolute top-40 left-[30rem] text-white text-4xl">
-                    PRODUCT & APPLICATION DEVELOPMENT
+                <div className="absolute inset-0 bg-black opacity-75"></div>
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center px-4">
+                    PRODUCT DEVELOPMENT
                 </h1>
             </div>
 

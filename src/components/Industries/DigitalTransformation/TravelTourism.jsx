@@ -12,11 +12,12 @@ const TravelTourism = () => {
             <Navbar />
             <div className="relative w-full h-[20rem]">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUGMO8v1YxhmAmNfQ_3xg-LGZ8c3emfX6_A&s"
+                    src="/assets/images/industries/travel-banner.jpg"
                     className="w-full h-full top-0 object-cover absolute"
-                    alt=""
+                    alt="travel-banner"
                 />
-                <h1 className="absolute top-40 left-[40rem] text-white text-4xl">
+                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl">
                     TRAVEL & TOURISM
                 </h1>
             </div>

@@ -12,16 +12,17 @@ const EnterpriseSolutions = () => {
             <Navbar />
             <div className="relative w-full h-[20rem]">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUGMO8v1YxhmAmNfQ_3xg-LGZ8c3emfX6_A&s"
+                    src="/assets/images/industries/enterprise-solutions-banner.jpg"
                     className="w-full h-full top-0 object-cover absolute"
-                    alt=""
+                    alt="enterprise-solutions-banner"
                 />
-                <h1 className="absolute top-40 left-[36rem] text-white text-4xl">
+                <div className="absolute inset-0 bg-black opacity-60"></div>
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl">
                     ENTERPRISE SOLUTIONS
                 </h1>
             </div>
 
-            <div className="flex items-center mt-10 px-32 gap-10">
+            <div className="flex items-center px-32 ">
                 <div>
                     <p className="text-gray-500 dark:text-gray-800 mt-5">
                         Many of our clients are medium and large corporate who
@@ -50,7 +51,7 @@ const EnterpriseSolutions = () => {
                 <img
                     src="/assets/images/industries/enterprise.svg"
                     alt="Enterprise-Img"
-                    className="h-[35rem] w-[35rem] mb-5 mt-5 object-fit"
+                    className="h-[35rem] w-[35rem]  object-fit"
                 />
             </div>
             <Footer />

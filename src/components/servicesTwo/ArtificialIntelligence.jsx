@@ -10,20 +10,21 @@ const ArtificialIntelligence = () => {
     return (
         <div className="dark:bg-[#FEFAF6]">
             <Navbar />
-            <div className="relative w-full h-[20rem]">
+            <div className="relative w-full h-[20rem] sm:h-[15rem]">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUGMO8v1YxhmAmNfQ_3xg-LGZ8c3emfX6_A&s"
+                    src="/public/assets/images/servicesTWO/artificial-intelligence-banner.jpg"
                     className="w-full h-full top-0 object-cover absolute"
-                    alt=""
+                    alt="artificial-intelligence-Banner"
                 />
-                <h1 className="absolute top-40 left-[22rem] text-white text-4xl">
+                <div className="absolute inset-0 bg-black opacity-75"></div>
+                <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center px-4">
                     ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
                 </h1>
             </div>
 
-            <div className="flex mt-10 px-32 gap-10">
-                <div>
-                    <p className="text-gray-500 dark:text-gray-800">
+            <div className="flex flex-col lg:flex-row mt-10 px-4 sm:px-10 md:px-16 lg:px-32 gap-10">
+                <div className="lg:w-2/3">
+                    <p className="text-gray-500 dark:text-gray-800 mb-5">
                         At Virtu Tech, we empower our customers to drive digital
                         transformation in their organizations with
                         state-of-the-art technologies such as Machine Learning,
@@ -48,7 +49,7 @@ const ArtificialIntelligence = () => {
                         efficiency.
                     </p>
 
-                    <p className="text-gray-500 dark:text-gray-800">
+                    <p className="text-gray-500 dark:text-gray-800 mb-5">
                         At Virtu, we have helped customers in various industries
                         to incorporate AI – Machine Learning, AI – Robotic
                         Process Automation, and AI – Natural Language
@@ -83,11 +84,13 @@ const ArtificialIntelligence = () => {
                         appointments, order processing and help desks.
                     </p>
                 </div>
-                <img
-                    src="/public/assets/images/industries/AI.svg"
-                    alt="AI-Img"
-                    className="h-[35rem] w-[35rem]"
-                />
+                <div className="flex justify-center lg:w-1/3">
+                    <img
+                        src="/public/assets/images/industries/AI.svg"
+                        alt="AI-Img"
+                        className="h-[15rem] w-[15rem] sm:h-[20rem] sm:w-[20rem] md:h-[25rem] md:w-[25rem] lg:h-[35rem] lg:w-[35rem]"
+                    />
+                </div>
             </div>
             <Footer />
         </div>
